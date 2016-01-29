@@ -9,3 +9,9 @@
 
 - slug: python
   name: Python
+  
+- slug: jekyll
+  name: Jekyll
+
+- slug: record
+  name: 记录

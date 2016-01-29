@@ -4,7 +4,7 @@ title:  "Hello Blog"
 date:   2015-01-29
 author: Author
 category: daily
-tags: [fuck]
+tags: [fuck,record,jekyll]
 ---
 
 说起来，已经有多久没有用中文写过大于四百字的文章了？
