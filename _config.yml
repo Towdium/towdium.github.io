@@ -1,37 +1,37 @@
 # SITE CONFIGURATION
-baseurl: "/fengzhichu-theme" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
-url: "https://fengzhichu.com/fengzhichu-theme" # the base hostname & protocol for your site
+baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
+url: "https://towdium.github.io" # the base hostname & protocol for your site
 imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random"
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: YOUR TITLE
+  title: Towdium's here
   #avatar: avatar.png
   hometitle: Home #display on navigation menu.
-  yoursitetitle: YOUR LOGO
+  yoursitetitle: Towdium
   gravatar: # Email MD5 hash
-  description: "used by search engines" # used by search engines
+  description: "personal blog of Towdium" # used by search engines
   visiblewords: 300
   # Header and footer text
   header_text: >
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     The misfits. The rebels. The troublemakers. The round pegs in the square holes.
 
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
   footer_text: >
-   <a href="https://yoursite.com">YOUR TITLE</a> 
+   <a href="https://yoursite.com">Towdium</a> 
 
   # Icons
   rss: false
-  email_address: "sam@example.com" # Full email address, e.g. "sam@example.com"
+  email_address: "towdium@gmail.com" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: "fengzhichu"
-  weibo: 
+  github: "Towdium"
+  weibo: "u/5092127194"
   google_plus:
   instagram:
   linkedin:  # Full URL
@@ -41,13 +41,13 @@ theme:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "fengzhichu"
+  twitter: "towdium"
   wordpress:
   youtube:
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: Towdium
   katex: true # Enable if using math markup
 
   # Localization strings
@@ -66,7 +66,7 @@ theme:
   post_navigation: false
 
 # PAGINATION
-enforce_ssl: "fengzhichu.com"
+enforce_ssl: 
 paginate: 5
 paginate_path: "blog/page:num"
 permalink: blog/:title/ 
@@ -78,7 +78,7 @@ sechby:
 
 # BUILD SETTINGS
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
