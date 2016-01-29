@@ -45,7 +45,7 @@ tags: [fuck]
   比如评论区和分享插件，由于我原来并不懂jekyll的结构，
   熟悉这些设定也花了一些时间，这些内容如果有时间的话我单开一篇来写好了。
 
-![Jekyll]({{ site.url }}\img\posts\hello_blog_1.jpg)
+![Jekyll](\img\posts\hello_blog_1.jpg)
 
 上边说的只是我以一个菜鸡的视角写的，内容也大多来自我的个人感受。
 我知道有经验的人搞起来就是几个命令的事，然而我并没有这种境界，
