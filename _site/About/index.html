@@ -11,6 +11,10 @@
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html lang="zh-CN" class="js">
 <!--<![endif]-->
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ab6052f15b809c" async="async"></script>
+
   
 
 	
@@ -59,13 +63,34 @@
 
 	<!-- Google Analytics -->
 	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-73095900-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
 
 	<script type="text/javascript">
     var host = "";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
     </script>
-    
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73095900-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
 </head>
 
 	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
@@ -225,210 +250,44 @@
 </article>
 
 <article>
-	<section class="post-content"><h1>Fengzhichu Theme</h1>
+	<section class="post-content"><h1>关于</h1>
 
-<p>A jekyll theme for personal blog which based on <a href="https://github.com/rohanchandra/type-theme">Type theme</a> and <a href="http://blog.ibireme.com">ibireme&#39;s blog</a>. Add several useful features. Fengzhichu Theme is powered by <a href="http://jekyllrb.com/">Jekyll</a> and freely
-hosted in <a href="https://pages.github.com/">Github pages</a>.</p>
+<p>旧都流民一人，现于苏州西交利物浦大学读大二，电气狗一只，喜欢玩儿挖金子的游戏。  </p>
 
-<h2>How to use it</h2>
+<p>下边把技能点列一下吧：</p>
 
 <ul>
-<li>Star &amp; Fork the <a href="https://github.com/fengzhichu/fengzhichu-theme">repo</a>.</li>
-<li>Rename repo as &#39;yourusername.github.io&#39;.</li>
-<li>You can delete gh-pages branch if you want.</li>
-<li>Clone your <b>master branch</b> to local directory.</li>
-<li>Custom the &#39;_config.yml&#39; to your style.</li>
-<li>Run jekyll serve -w.</li>
+<li>2009年左右接触PS，Audition，日常操作都没啥问题。</li>
+<li>2014年接触Java，现能做简单的桌面程序。<br></li>
+<li>2014年接触AE，Premiere，剪个视频，套套模版，做做模版没啥问题。</li>
+<li>2015年接触Python，做了一个简单的方程组计算器（当然是没有用Numpy的）。</li>
+<li>2015年接触C，也就是普通水平吧。<br></li>
+<li>各种专业课勉强不挂，就不说出来献丑了。</li>
 </ul>
 
-<h2>Customization</h2>
-
-<h3>_config.yml</h3>
-
-<p>Some important configurations.</p>
-
-<ul>
-<li>imageurl: Randomly change image which display on top of site.
-
-<ul>
-<li>By default image changes everytime when open your site or reflash it. If you want to change image daily or weekly, just append &#39;/daily&#39; or &#39;weekly&#39; to imageurl.</li>
-</ul></li>
-<li>title: Display on browse tab.</li>
-<li>hometitle: The first menu name of navigation bar.</li>
-<li>yoursitetitle: Your LOGO place here.</li>
-<li>visiblewords: Number of words which you want to display in post of homepage.</li>
-<li>sechby:
-
-<ul>
-<li>category: &quot;Posted in&quot; #Words before Category name.</li>
-<li>tag: &quot;with&quot; #Words before Tag name.</li>
-<li>example: Posted in &#39;Category name&#39; with &#39;Tag name&#39;.</li>
-</ul></li>
-</ul>
-
-<h3>Tags</h3>
-
-<p>Add new tag.</p>
-
-<ul>
-<li>Annotate your post entry front-matter block as usual:</li>
-</ul>
-<div class="highlight"><pre><code class="language-" data-lang="">        ---
-        layout: post
-        title: How To Use Tags And Categories On GitHub Pages Without Plugins
-        category: programming
-        tags: [github, github-pages, jekyll]
-        ---
-</code></pre></div>
-<ul>
-<li>Add an entry in your _data/tags.yml for every tag.</li>
-</ul>
-<div class="highlight"><pre><code class="language-" data-lang="">        - slug: github-pages
-          name: GitHub Pages
-</code></pre></div>
-<ul>
-<li>Create a .md file which name is your Tag slug for every tag.</li>
-</ul>
-<div class="highlight"><pre><code class="language-" data-lang="">        ---
-        layout: blog_by_tag
-        tag: github-pages
-        permalink: /blog/tag/github-pages/
-        ---
-</code></pre></div>
-<h3>Categories</h3>
-
-<p>Similar as Tags.</p>
-
-<h2>Thanks</h2>
-
-<ul>
-<li>Theme template: <a href="https://github.com/rohanchandra/type-theme">type-theme</a></li>
-<li>Navigation bar: <a href="http://blog.ibireme.com">ibireme&#39;s blog</a></li>
-<li>Features of Tag and Category: <a href="http://www.minddust.com/post/tags-and-categories-on-github-pages/">HOW TO USE TAGS AND CATEGORIES ON GITHUB PAGES WITHOUT PLUGINS</a></li>
-</ul>
-
-<h2>Enjoy</h2>
-
-<ul>
-<li>If you like, please star it. Thank you!</li>
-<li>Enjoy it!</li>
-</ul>
-
-<h2>Copyright &amp; License</h2>
-
-<p>Copyright (C) 2015 - Released under the MIT License.</p>
-
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
+<p>不爱美食，不爱旅游，以上。</p>
 </section>
 </article>
 <!--article class="feature-image">
   <header style="background-image: url('/img/sample_feature_img_2.png')">
     <h1 class="call-out-title">About</h1>
   </header>
-  <section class="post-content"><h1>Fengzhichu Theme</h1>
+  <section class="post-content"><h1>关于</h1>
 
-<p>A jekyll theme for personal blog which based on <a href="https://github.com/rohanchandra/type-theme">Type theme</a> and <a href="http://blog.ibireme.com">ibireme&#39;s blog</a>. Add several useful features. Fengzhichu Theme is powered by <a href="http://jekyllrb.com/">Jekyll</a> and freely
-hosted in <a href="https://pages.github.com/">Github pages</a>.</p>
+<p>旧都流民一人，现于苏州西交利物浦大学读大二，电气狗一只，喜欢玩儿挖金子的游戏。  </p>
 
-<h2>How to use it</h2>
+<p>下边把技能点列一下吧：</p>
 
 <ul>
-<li>Star &amp; Fork the <a href="https://github.com/fengzhichu/fengzhichu-theme">repo</a>.</li>
-<li>Rename repo as &#39;yourusername.github.io&#39;.</li>
-<li>You can delete gh-pages branch if you want.</li>
-<li>Clone your <b>master branch</b> to local directory.</li>
-<li>Custom the &#39;_config.yml&#39; to your style.</li>
-<li>Run jekyll serve -w.</li>
+<li>2009年左右接触PS，Audition，日常操作都没啥问题。</li>
+<li>2014年接触Java，现能做简单的桌面程序。<br></li>
+<li>2014年接触AE，Premiere，剪个视频，套套模版，做做模版没啥问题。</li>
+<li>2015年接触Python，做了一个简单的方程组计算器（当然是没有用Numpy的）。</li>
+<li>2015年接触C，也就是普通水平吧。<br></li>
+<li>各种专业课勉强不挂，就不说出来献丑了。</li>
 </ul>
 
-<h2>Customization</h2>
-
-<h3>_config.yml</h3>
-
-<p>Some important configurations.</p>
-
-<ul>
-<li>imageurl: Randomly change image which display on top of site.
-
-<ul>
-<li>By default image changes everytime when open your site or reflash it. If you want to change image daily or weekly, just append &#39;/daily&#39; or &#39;weekly&#39; to imageurl.</li>
-</ul></li>
-<li>title: Display on browse tab.</li>
-<li>hometitle: The first menu name of navigation bar.</li>
-<li>yoursitetitle: Your LOGO place here.</li>
-<li>visiblewords: Number of words which you want to display in post of homepage.</li>
-<li>sechby:
-
-<ul>
-<li>category: &quot;Posted in&quot; #Words before Category name.</li>
-<li>tag: &quot;with&quot; #Words before Tag name.</li>
-<li>example: Posted in &#39;Category name&#39; with &#39;Tag name&#39;.</li>
-</ul></li>
-</ul>
-
-<h3>Tags</h3>
-
-<p>Add new tag.</p>
-
-<ul>
-<li>Annotate your post entry front-matter block as usual:</li>
-</ul>
-<div class="highlight"><pre><code class="language-" data-lang="">        ---
-        layout: post
-        title: How To Use Tags And Categories On GitHub Pages Without Plugins
-        category: programming
-        tags: [github, github-pages, jekyll]
-        ---
-</code></pre></div>
-<ul>
-<li>Add an entry in your _data/tags.yml for every tag.</li>
-</ul>
-<div class="highlight"><pre><code class="language-" data-lang="">        - slug: github-pages
-          name: GitHub Pages
-</code></pre></div>
-<ul>
-<li>Create a .md file which name is your Tag slug for every tag.</li>
-</ul>
-<div class="highlight"><pre><code class="language-" data-lang="">        ---
-        layout: blog_by_tag
-        tag: github-pages
-        permalink: /blog/tag/github-pages/
-        ---
-</code></pre></div>
-<h3>Categories</h3>
-
-<p>Similar as Tags.</p>
-
-<h2>Thanks</h2>
-
-<ul>
-<li>Theme template: <a href="https://github.com/rohanchandra/type-theme">type-theme</a></li>
-<li>Navigation bar: <a href="http://blog.ibireme.com">ibireme&#39;s blog</a></li>
-<li>Features of Tag and Category: <a href="http://www.minddust.com/post/tags-and-categories-on-github-pages/">HOW TO USE TAGS AND CATEGORIES ON GITHUB PAGES WITHOUT PLUGINS</a></li>
-</ul>
-
-<h2>Enjoy</h2>
-
-<ul>
-<li>If you like, please star it. Thank you!</li>
-<li>Enjoy it!</li>
-</ul>
-
-<h2>Copyright &amp; License</h2>
-
-<p>Copyright (C) 2015 - Released under the MIT License.</p>
-
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
+<p>不爱美食，不爱旅游，以上。</p>
 </section>
 </article-->
 
