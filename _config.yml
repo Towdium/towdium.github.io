@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
 url: "https://towdium.github.io" # the base hostname & protocol for your site
-imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random"
+imageurl: "https://unsplash.it/2600/500?random" #"https://unsplash.it/2600/500?random""https://source.unsplash.com/category/nature/2600x500"
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -17,8 +17,8 @@ theme:
   header_text: >
      The misfits. The rebels. The troublemakers. The round pegs in the square holes.
 
-  header_text_feature_image: img/sample_feature_img.png
-  place_holder_image: img/sample_feature_img.png
+  header_text_feature_image: img/bg.jpg
+  place_holder_image: img/bg.jpg
   footer_text: >
    <a href="https://yoursite.com">Towdium</a> 
 
