@@ -1,29 +1,11 @@
-- slug: django
-  name: Django
+- slug: c
+  name: C
 
-- slug: django-template-tags
-  name: Django Template Tags
+- slug: fuck
+  name: 吐槽
 
-- slug: font-awesome
-  name: Font Awesome
-
-- slug: icons
-  name: Icons
-
-- slug: image-processing
-  name: Image Processing
+- slug: java
+  name: Java
 
 - slug: python
   name: Python
-
-- slug: github
-  name: GitHub
-
-- slug: github-pages
-  name: GitHub Pages
-
-- slug: jekyll
-  name: Jekyll
-  
-- slug: open-source
-  name: Open Source

@@ -9,7 +9,7 @@ All the articles and pictures posted by the author are licensed under [Creative 
 The framework is shared under [MIT License][4], it is highly suggested to use [the template][5] provided by the original author and leave stars to that repository.
 
 
-[1]: https://github.com/fengzhichu/fengzhichu-theme
+[1]: https://github.com/fengzhichu/
 [2]: http://jekyllrb.com/
 [3]: https://creativecommons.org/licenses/by/4.0/
 [4]: http://en.wikipedia.org/wiki/MIT_License

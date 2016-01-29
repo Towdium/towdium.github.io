@@ -1,9 +1,9 @@
-- slug: ios
-  name: iOS
+- slug: daily
+  name: Daily
 #  color: '#3498db'
   
-- slug: design
-  name: Design
+- slug: coding
+  name: Coding
 #  color: '#1abc9c'
 
 - slug: other

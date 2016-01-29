@@ -1,24 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Towdium&#39;s here</title>
-    <atom:link href="https://towdium.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://towdium.github.io/</link>
-    <description>personal blog of Towdium</description>
-    <pubDate>Sat, 30 Jan 2016 00:15:17 +0800</pubDate>
-    
-      <item>
-        <title>Hello Blog</title>
-        <link>https://towdium.github.io/blog/hello-blog/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/hello-blog/</guid>
-        <description>&lt;p&gt;说起来，已经有多久没有用中文写过大于四百字的文章了？
+---
+layout: post
+title:  "Hello Blog"
+date:   2015-01-29
+author: Author
+category: daily
+tags: [fuck]
+---
+
+说起来，已经有多久没有用中文写过大于四百字的文章了？
 记得高三的时候对文字兴趣可大了，当时每到自习课我都要写黄文，一写就能写好几张，
 现在反而没有当时那种劲头了。
 想起来从那时起，已经很久没有写一些记录性的东西了，中间在新浪更过两篇，QQ更过两篇，又感觉太过矫情，删掉了。所以跑到Github pages来更这个博客，
 就像是一个归档一样的东西，不然以后想起来这两年干了啥，不要只想到赶不完的deadline，
-做不完的视频，以及总是用完的卷纸，感觉这样有点荒废。&lt;/p&gt;
+做不完的视频，以及总是用完的卷纸，感觉这样有点荒废。
 
-&lt;p&gt;以前写东西怎么也要酝酿个几天，好比撒尿也要憋一阵子才能尿的带劲。
+以前写东西怎么也要酝酿个几天，好比撒尿也要憋一阵子才能尿的带劲。
 不过这篇我是丝毫没有酝酿了，因为这两天一直在忙着搭建这个网站，
 写这点玩意儿也只是为了记录一下这个工作的阶段性完成。
 作为一个前端根本还没入门的新手，搞这些东西我完全就只能顾着蒙逼了。
@@ -37,35 +33,29 @@
 - Ruby gem 下载虽然方便，但是不同的模版要求不同的 gem ，
   于是就在不停的下这个下那个，然后又是一堆版本冲突。
   这个么，在每个 gem 的主页上都会写明需要的其它 gem 的版本，
-  拿下面这个 &lt;a href=&quot;https://rubygems.org/gems/jekyll&quot;&gt;Jekyll 页面&lt;/a&gt;
+  拿下面这个 [Jekyll 页面](https://rubygems.org/gems/jekyll)
   来说,比如说上一点提到的 rouge, 对应的版本是 1.3 。
   另外，一些插件的安装可能需要DevKit，这部分内容参见
-  &lt;a href=&quot;https://github.com/oneclick/rubyinstaller/wiki/Development-Kit&quot;&gt;DevKit 在 Github 上的 Wiki&lt;/a&gt; 。
+  [DevKit 在 Github 上的 Wiki](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) 。
 - 浏览器适配。这个我只能说 Font Awesome 跟遨游的兼容很有问题。 
   所以如果你在界面上看见一些迷之方块，那个基本上都是 Font Awesome 的锅。
   这个以我的水平完全搞不定，对我来说解决方法只有换浏览器。
   所以我现在浏览器已经换到了 chrome 内核，遨游请勿念我。
 - 插件安装。在搭建完主体网页之后还有一些插件可以装，
   比如评论区和分享插件，由于我原来并不懂jekyll的结构，
-  熟悉这些设定也花了一些时间，这些内容如果有时间的话我单开一篇来写好了。&lt;/p&gt;
+  熟悉这些设定也花了一些时间，这些内容如果有时间的话我单开一篇来写好了。
 
-&lt;p&gt;&lt;img src=&quot;..imgpostshello_blog_1.jpg&quot; alt=&quot;Jekyll&quot;&gt;&lt;/p&gt;
+![Jekyll](..\img\posts\hello_blog_1.jpg)
 
-&lt;p&gt;上边说的只是我以一个菜鸡的视角写的，内容也大多来自我的个人感受。
+上边说的只是我以一个菜鸡的视角写的，内容也大多来自我的个人感受。
 我知道有经验的人搞起来就是几个命令的事，然而我并没有这种境界，
 完全是出于分享写点东西，如果有不准的地方，欢迎指出咯。
 如果需要具体的搭建步骤，可以参考
-&lt;a href=&quot;http://site.douban.com/196781/widget/notes/12161495/note/264946576/&quot;&gt;这篇文章&lt;/a&gt; 或者直接百度 &amp;quot;Github + Jekyll + Markdown&amp;quot; 就会有不少相关内容。我就不献丑了。&lt;/p&gt;
+[这篇文章](http://site.douban.com/196781/widget/notes/12161495/note/264946576/) 或者直接百度 "Github + Jekyll + Markdown" 就会有不少相关内容。我就不献丑了。
 
-&lt;p&gt;说了这么多，原本只是打算做一个简短的记录，手一滑就写了这么多，这篇文章不如叫
-&amp;quot;Jekyll环境配置的问题及解决参考&amp;quot; 好了（笑）。
-最后，感谢这个 Jekyll 主题的制作者 &lt;a href=&quot;https://github.com/fengzhichu/&quot;&gt;枫之楚&lt;/a&gt; ，
-另外，希望这个blog不会半途而废吧。&lt;/p&gt;
+说了这么多，原本只是打算做一个简短的记录，手一滑就写了这么多，这篇文章不如叫
+"Jekyll环境配置的问题及解决参考" 好了（笑）。
+最后，感谢这个 Jekyll 主题的制作者 [枫之楚](https://github.com/fengzhichu/) ，
+另外，希望这个blog不会半途而废吧。
 
-&lt;p&gt;祝好。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 29 Jan 2015 00:00:00 +0800</pubDate>
-      </item>
-    
-  </channel>
-</rss>
+祝好。
