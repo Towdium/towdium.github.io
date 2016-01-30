@@ -15,3 +15,9 @@
 
 - slug: record
   name: 记录
+
+- slug: mit
+  name: MIT
+
+- slug: license
+  name: License
