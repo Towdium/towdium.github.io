@@ -1,6 +1,6 @@
 ---
 layout: blog_by_category
-title: '其它'
-category: other
-permalink: /Other/
+title: '姿势'
+category: knowledge
+permalink: /Knowledge/
 ---
