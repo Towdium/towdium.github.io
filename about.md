@@ -5,7 +5,7 @@ permalink: /About/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
-旧都流民一人，现于苏州[西交利物浦大学](www.xjtlu.edu.cn)读大二，电气狗一只，喜欢玩儿挖金子的游戏。  
+旧都流民一人，现于苏州[西交利物浦大学](http://www.xjtlu.edu.cn)读大二，电气狗一只，喜欢玩儿挖金子的游戏。  
 
 下边把技能点列一下吧：
 
