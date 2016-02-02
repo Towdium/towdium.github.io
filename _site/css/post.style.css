@@ -1,4 +1,5 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; font-family: "Open Sans",Helvetica,Arial,"Microsoft YaHei",sans-serif;}
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; font-family: "Open Sans",Helvetica,Arial,"Microsoft YaHei",sans-serif;line-height:200%}
+ span { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; font-family: "Open Sans",Helvetica,Arial,"Microsoft YaHei",sans-serif;line-height:130%}
 body{margin:0; height: 100%; padding:0;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;*display:inline;*zoom:1;vertical-align:baseline}
@@ -8,7 +9,7 @@ a{background-color:transparent}
 a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
-blockquote{margin:1.5em 40px}
+blockquote{margin:1.2em 10px}
 dfn{font-style:italic}
 h1{font-size:2em;line-height:1.5em;margin-top:0.75em;margin-bottom:0.75em}
 h2{font-size:1.5em;line-height:2em;margin-top:1em;margin-bottom:1em}
@@ -31,8 +32,8 @@ svg:not(:root){overflow:hidden}
 figure{margin:1.5em 40px}
 hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}
 pre{overflow:auto}
-code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}
-
+kbd,pre,samp{font-family:monospace, monospace;font-size:1em}
+code{font-family: "Microsoft YaHei","Open Sans",Helvetica,Arial,sans-serif;font-size:1em;background-color: #f8f8f8;padding: 0px;line-height:100%;font-style:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 
@@ -56,8 +57,8 @@ h3,.h3{font-size:1.375em;line-height:1.13636364}
 @media (min-width: 56.25em){h3,.h3{font-size:1.75em;line-height:1.25}}
 h4,.h4{font-size:1.125em;line-height:1.11111111}
 @media (min-width: 43.75em){h4,.h4{line-height:1.22222222}}
-blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}
-@media (min-width: 43.75em){blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}}
+blockquote{font-size:1em;line-height:1;padding:1% 2%;color:#666666}
+@media (min-width: 43.75em){blockquote{font-size:1em;line-height:1.25;padding:1% 2%;color:#666666}}
 
 .post ul ul,.post ul ol,.post ol ul,.post ol ol{margin:0}
 .pageTitle{margin:2rem auto 1em;text-align:center}
@@ -68,7 +69,7 @@ blockquote{font-size:1.25em;line-height:1.25;padding:1% 2%}
 .header h1{margin:0;float:left;padding-left:2rem;font-size:1em;line-height:3em;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-weight:800;text-transform:uppercase}
 .header h1 a{color:white;text-decoration:none}
 .post .postTitle{text-align:center;margin-top:2rem;margin-bottom:1rem}
-.post blockquote{clear:both;margin:2.5em 0;padding:0;line-height:1.8;position:relative}
+.post blockquote{clear:both;margin:1.2em 0;padding:0;line-height:1.8;position:relative}
 .post blockquote:before{content:"";position:absolute;top:-1.25em;background:seagreen;display:block;height:2px;width:150px;left:calc(50% - 75px)}
 .post blockquote:after{content:"";position:absolute;bottom:-1.25em;background:seagreen;display:block;height:2px;width:150px;left:calc(50% - 75px)}
 .post .meta{text-align:center;color:gray;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-weight:300}

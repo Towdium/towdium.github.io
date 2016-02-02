@@ -12,7 +12,7 @@ theme:
   yoursitetitle: Towdium
   gravatar: # Email MD5 hash
   description: "personal blog of Towdium" # used by search engines
-  visiblewords: 500
+  visiblewords: 400000
   # Header and footer text
   header_text: >
      The misfits. The rebels. The troublemakers. The round pegs in the square holes.

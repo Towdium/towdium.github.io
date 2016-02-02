@@ -22,8 +22,8 @@
 	
 <head>
 	<meta charset="utf-8">
-	<title>代码 | Towdium's here</title>
-	<meta name="description" content="personal blog of Towdium">
+	<title>浅析 Java 中 enum 枚举与 C 的异同以及使用方法 | Towdium's here</title>
+	<meta name="description" content="  代码 , Java, C, enum 的前世今生 —— C 与 Java">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
@@ -42,7 +42,7 @@
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 	<!-- Canonical -->
-	<link rel="canonical" href="https://towdium.github.io/Coding/">
+	<link rel="canonical" href="https://towdium.github.io/blog/usage-of-enum-in-java/">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="Towdium's here" href="https://towdium.github.io/feed.xml" />
@@ -268,38 +268,27 @@ ga('send', 'pageview');
 </header> <!-- #main-header -->
 
     		<div id="et-main-area">
-      			<div class="home">
-  <article class="feature-image" >
-  	<div style="background-image: url('/img/bg.jpg')"/>
-  	<header style="background-image: url('https://source.unsplash.com/category/nature/2600x500')">
-    <h1 class="call-out-title">代码</h1>
-    </header>
-  </article>
+      			
 
-<div class="posts">
-    
-        
-            
 	
 
-				
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-            <a id="post-link-trans" class="post-link" href="/blog/usage-of-enum-in-java/">
-		        浅析 Java 中 enum 枚举与 C 的异同以及使用方法
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2015年01月30日</a>
-		       | <a class="subtitle" href="/About/">Author</a>
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/代码/">代码</a></a> <a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/java/">Java</a>, <a href="/tags/c/">C</a></a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <h2>enum 的前世今生 —— C 与 Java</h2>
+	
+
+<article >
+  <header style="background-image: url('/')">
+
+<!--article  >
+  <div style="background-image: url('/')"/>
+  <header style="background-image: url('https://source.unsplash.com/category/nature/2600x500')"-->
+    <h1 class="title">浅析 Java 中 enum 枚举与 C 的异同以及使用方法</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+    <a class="subtitle">2015年01月30日</a>
+     | <a class="subtitle" href="/About/">Author</a>
+	 | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/代码/">代码</a></a> <a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/java/">Java</a>, <a href="/tags/c/">C</a></a>
+    </p>
+  </header>
+  <section class="post-content">
+  <h2>enum 的前世今生 —— C 与 Java</h2>
 
 <p>相信有不少小伙伴儿们刚开始接触 enum （枚举）的时候和笔者的想法是一样的：
 “我知道 Java 里边结构主要就是 类，方法，变量，这个枚举是个什么玩意？”
@@ -682,14 +671,40 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 <a href="http://blog.csdn.net/brockliu1010/article/details/12440019">匿名内部类构造函数</a><br>
 <a href="http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html">Java enum的用法详解 by rhino</a></p>
 
-		  
-		  </div>
-		</div>
-        
+  </section>
+  
+</article>
 
-    
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//Towdium.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
-</div>
+
 
     		</div> <!-- #et-main-area -->
 		</div> <!-- #page-container -->
