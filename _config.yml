@@ -23,7 +23,7 @@ theme:
    <a href="https://yoursite.com">Towdium</a> 
 
   # Icons
-  rss: false
+  rss: true
   email_address: "towdium@gmail.com" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
