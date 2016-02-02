@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.0">Jekyll</generator><link href="https://towdium.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://towdium.github.io/" rel="alternate" type="text/html" /><updated>2016-02-03T00:51:48+08:00</updated><id>https://towdium.github.io/</id><entry><title>浅析 Java 中 enum 枚举与 C 的异同以及使用方法</title><link href="https://towdium.github.io/blog/usage-of-enum-in-java/" rel="alternate" type="text/html" title="浅析 Java 中 enum 枚举与 C 的异同以及使用方法" /><published>2015-01-30T00:00:00+08:00</published><updated>2015-01-30T00:00:00+08:00</updated><id>https://towdium.github.io/blog/usage-of-enum-in-java</id><content type="html" xml:base="https://towdium.github.io/blog/usage-of-enum-in-java/">&lt;h2&gt;enum 的前世今生 —— C 与 Java&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>https://towdium.github.io/</link>
+    <atom:link href="https://towdium.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 03 Feb 2016 01:08:15 +0800</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2016 01:08:15 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.0</generator>
+    
+      <item>
+        <title>浅析 Java 中 enum 枚举与 C 的异同以及使用方法</title>
+        <description>&lt;h2&gt;enum 的前世今生 —— C 与 Java&lt;/h2&gt;
 
 &lt;p&gt;相信有不少小伙伴儿们刚开始接触 enum （枚举）的时候和笔者的想法是一样的：
 “我知道 Java 里边结构主要就是 类，方法，变量，这个枚举是个什么玩意？”
@@ -379,7 +392,24 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
 &lt;p&gt;参考文献：&lt;br&gt;
 &lt;a href=&quot;http://blog.csdn.net/brockliu1010/article/details/12440019&quot;&gt;匿名内部类构造函数&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html&quot;&gt;Java enum的用法详解 by rhino&lt;/a&gt;&lt;/p&gt;</content><author><name>Author</name></author><category term="coding" /><category term="java" /><category term="c" /><summary>enum 的前世今生 —— C 与 Java</summary></entry><entry><title>关于MIT许可的常见问题及解答</title><link href="https://towdium.github.io/blog/MIT-Q&A/" rel="alternate" type="text/html" title="关于MIT许可的常见问题及解答" /><published>2015-01-30T00:00:00+08:00</published><updated>2015-01-30T00:00:00+08:00</updated><id>https://towdium.github.io/blog/MIT-Q&amp;A</id><content type="html" xml:base="https://towdium.github.io/blog/MIT-Q&amp;A/">&lt;h2&gt;前言&lt;/h2&gt;
+&lt;a href=&quot;http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html&quot;&gt;Java enum的用法详解 by rhino&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Jan 2015 00:00:00 +0800</pubDate>
+        <link>https://towdium.github.io/blog/usage-of-enum-in-java/</link>
+        <guid isPermaLink="true">https://towdium.github.io/blog/usage-of-enum-in-java/</guid>
+        
+        <category>java</category>
+        
+        <category>c</category>
+        
+        
+        <category>coding</category>
+        
+      </item>
+    
+      <item>
+        <title>关于MIT许可的常见问题及解答</title>
+        <description>&lt;h2&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;在百度上转了一圈，发现国内对于这些许可什么的说明并不充分，大多是集中于不同许可的异同，
 但是对于实际操作中的一些问题，解释的文章并不是很多。比如说我要去使用别人项目里的片段，
@@ -508,7 +538,24 @@ THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND
 
 &lt;p&gt;Tawsoft 是一家总部位于斯旺西的软件公司，提供软件工程服务以及网络营销解决方案。&lt;br&gt;
 如果你觉得这篇文章有用，你可以考虑订阅Tawsoft即将推出的线上报纸，并且可以随时退订。&lt;br&gt;
-或者你也可以关注Tawsoft的推特 @tawsoft 。&lt;/p&gt;</content><author><name>Author</name></author><category term="knowledge" /><category term="mit" /><category term="license" /><summary>前言</summary></entry><entry><title>Hello Blog</title><link href="https://towdium.github.io/blog/hello-blog/" rel="alternate" type="text/html" title="Hello Blog" /><published>2015-01-29T00:00:00+08:00</published><updated>2015-01-29T00:00:00+08:00</updated><id>https://towdium.github.io/blog/hello-blog</id><content type="html" xml:base="https://towdium.github.io/blog/hello-blog/">&lt;p&gt;说起来，已经有多久没有用中文写过大于四百字的文章了？
+或者你也可以关注Tawsoft的推特 @tawsoft 。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Jan 2015 00:00:00 +0800</pubDate>
+        <link>https://towdium.github.io/blog/MIT-Q&A/</link>
+        <guid isPermaLink="true">https://towdium.github.io/blog/MIT-Q&A/</guid>
+        
+        <category>mit</category>
+        
+        <category>license</category>
+        
+        
+        <category>knowledge</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello Blog</title>
+        <description>&lt;p&gt;说起来，已经有多久没有用中文写过大于四百字的文章了？
 记得高三的时候对文字兴趣可大了，当时每到自习课我都要写黄文，一写就能写好几张，
 现在反而没有当时那种劲头了。
 想起来从那时起，已经很久没有写一些记录性的东西了，中间在新浪更过两篇，QQ更过两篇，又感觉太过矫情，删掉了。所以跑到Github pages来更这个博客，
@@ -563,10 +610,22 @@ THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND
 最后，感谢这个 Jekyll 主题的制作者 &lt;a href=&quot;https://github.com/fengzhichu/&quot;&gt;枫之楚&lt;/a&gt; ，
 另外，希望这个 blog 不会半途而废吧。&lt;/p&gt;
 
-&lt;p&gt;祝好。&lt;/p&gt;</content><author><name>Author</name></author><category term="daily" /><category term="fuck" /><category term="record" /><category term="jekyll" /><summary>说起来，已经有多久没有用中文写过大于四百字的文章了？
-记得高三的时候对文字兴趣可大了，当时每到自习课我都要写黄文，一写就能写好几张，
-现在反而没有当时那种劲头了。
-想起来从那时起，已经很久没有写一些记录性的东西了，中间在新浪更过两篇，QQ更过两篇，又感觉太过矫情，删掉了。所以跑到Github pages来更这个博客，
-就像是一个归档一样的东西，不然以后想起来这两年干了啥，
-不要只想到赶不完的 deadline ，
-做不完的视频，以及总是用完的卷纸，感觉这样有点荒废。</summary></entry></feed>
+&lt;p&gt;祝好。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jan 2015 00:00:00 +0800</pubDate>
+        <link>https://towdium.github.io/blog/hello-blog/</link>
+        <guid isPermaLink="true">https://towdium.github.io/blog/hello-blog/</guid>
+        
+        <category>fuck</category>
+        
+        <category>record</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>daily</category>
+        
+      </item>
+    
+  </channel>
+</rss>
