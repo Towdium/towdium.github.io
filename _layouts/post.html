@@ -10,6 +10,7 @@ layout: default
 <!--article {% if page.feature-img %}class="feature-image"{% endif %} >
   <div style="background-image: url('{{ site.baseurl }}/{{ page.feature-image }}')"/>
   <header style="background-image: url('{{ site.imageurl }}')"-->
+  {% feed_meta %}
     <h1 class="title">{{ page.title }}</h1>
     <p id="subtitletrans" class="subtitlecontainer">
     <a class="subtitle">{{ page.date | date: "%Y年%m月%-d日" }}</a>

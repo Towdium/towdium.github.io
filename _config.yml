@@ -85,3 +85,4 @@ sass:
 
 gems:
   - jekyll-paginate
+  - jekyll-feed
