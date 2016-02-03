@@ -33,7 +33,7 @@ figure{margin:1.5em 40px}
 hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}
 pre{overflow:auto}
 kbd,pre,samp{font-family:monospace, monospace;font-size:1em}
-code{font-family: "Microsoft YaHei","Open Sans",Helvetica,Arial,sans-serif;font-size:1em;background-color: #f8f8f8;padding: 0px;line-height:100%;font-style:bold}
+code{font-family: "Microsoft YaHei","Open Sans",Helvetica,Arial,sans-serif;font-size:1em;background-color: #f8f8f8;padding: 0px;line-height:100%;font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 
