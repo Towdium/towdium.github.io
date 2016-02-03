@@ -18,7 +18,7 @@ h4{font-size:1em;line-height:1.5em;margin-top:1.5em;margin-bottom:1.5em}
 h5{font-size:0.83em;line-height:1.80723em;margin-top:1.80723em;margin-bottom:1.80723em}
 h6{font-size:0.67em;line-height:2.23881em;margin-top:2.23881em;margin-bottom:2.23881em}
 mark{background:#ff0;color:#000}
-p,pre{margin:0 0 15px 0; font-weight: normal;}
+p,pre{margin:0 0 8px 8px; font-weight: normal;}
 small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sup{top:-0.5em}
@@ -31,7 +31,7 @@ img{border:0;-ms-interpolation-mode:bicubic}
 svg:not(:root){overflow:hidden}
 figure{margin:1.5em 40px}
 hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}
-pre{overflow:auto}
+pre{overflow:hidden}
 kbd,pre,samp{font-family:monospace, monospace;font-size:1em}
 code{font-family: "Microsoft YaHei","Open Sans",Helvetica,Arial,sans-serif;font-size:1em;background-color: #f8f8f8;padding: 0px;line-height:100%;font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
