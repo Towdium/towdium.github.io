@@ -1,10 +1,10 @@
 - slug: daily
-  name: 日产
+  name: Daily
 #  color: '#3498db'
-  
+
 - slug: coding
-  name: 代码
+  name: Coding
 #  color: '#1abc9c'
 
 - slug: knowledge
-  name: 姿势
+  name: knowledge

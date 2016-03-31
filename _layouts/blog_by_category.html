@@ -12,7 +12,7 @@ layout: default
 <div class="posts">
     {% if site.categories[page.category] %}
         {% for post in site.categories[page.category] %}
-            {% include post_tags_category.html %}			
+            {% include post_tags_category.html %}
 		<div class="post-teaser">
 		  <header>
 		    <h1>
@@ -31,7 +31,7 @@ layout: default
 		  {% if  num  < site.theme.visiblewords %}
 		    {{ post.content }}
 		  {% else %}
-		    {{ post.content | truncat: site.theme.visiblewords }}
+		    {{ post.content | truncate: site.theme.visiblewords }}
 		    <p>
 		    <a class="text" href="{{ post.url | prepend: site.baseurl }}">
 		      {{ site.theme.str_continue_reading }}
