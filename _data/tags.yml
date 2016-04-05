@@ -9,7 +9,7 @@
 
 - slug: python
   name: Python
-  
+
 - slug: jekyll
   name: Jekyll
 
@@ -21,3 +21,6 @@
 
 - slug: license
   name: License
+
+- slug: atom
+  name: atom
