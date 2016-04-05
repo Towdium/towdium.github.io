@@ -78,7 +78,8 @@ categories:
 
 所以呢，这次的内容就是这么多啦，希望一发安利可以帮各位接触到新的开发工具。另外呢，如果最近有时间会开一个 Atom 下写 LaTeX 的坑，不过篇幅大概不会很长吧，至于用 LaTeX 自带的编辑器写 LaTeX 那个简直玄学，我就不抖机灵了。最后呢，祝各位与 Atom 相处愉快（笑）。
 
-sadada
+
+
 
 [1]:https://atom.io/
 [2]:/img/posts/introduction-of-atom.markdown_3.png
