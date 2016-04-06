@@ -20,7 +20,7 @@ theme:
   header_text_feature_image: img/bg.jpg
   place_holder_image: img/bg.jpg
   footer_text: >
-   <a href="https://yoursite.com">Towdium</a> 
+   <a href="https://yoursite.com">Towdium</a>
 
   # Icons
   rss: false
@@ -35,7 +35,7 @@ theme:
   google_plus:
   instagram:
   linkedin:  # Full URL
-  pinterest: 
+  pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
@@ -66,18 +66,18 @@ theme:
   post_navigation: false
 
 # PAGINATION
-enforce_ssl: 
+enforce_ssl:
 paginate: 5
 paginate_path: "blog/page:num"
-permalink: blog/:title/ 
+permalink: blog/:title/
 
 # Posted in ... with ...
-sechby: 
+sechby:
   category:   #in
   tag:   #with
 
 # BUILD SETTINGS
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
