@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一发 Atom 的日常安利
-date: 2015-04-05T00:00:00.000Z
+date: 2016-04-05T00:00:00.000Z
 author: Author
 category: daily
 tags:

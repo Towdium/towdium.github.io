@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "浅析 Java 中 enum 枚举与 C 的异同以及使用方法"
-date:   2015-01-30
+date:   2016-01-30
 author: Author
 category: coding
 tags: [java, c]
@@ -16,24 +16,24 @@ tags: [java, c]
 我尽量把它写的简单一些，没有基础应该也能看懂，或者直接读下一节也不会影响整体内容的理解。
 注意，作为一个面向过程的语言，
 C 语言是没有类的，取而代之的是 structure （结构体），
-你可以把它理解成只有变量没有方法的类,我们在后边会用到。  
+你可以把它理解成只有变量没有方法的类,我们在后边会用到。
 
 ```c
 #include <stdio.h>
 
 int main(){
-    /* 
+    /*
     * 新建 enum 类型的变量 myLeverState 表示拉杆状态
-    * 同时，myLeverState 受前边的内容限制， 
-    * 需要表示 LeverState，且内容必须是 ON 或 OFF 之一 
+    * 同时，myLeverState 受前边的内容限制，
+    * 需要表示 LeverState，且内容必须是 ON 或 OFF 之一
     */
 	enum LeverState{ OFF, ON } myLeverState;
     myLeverState = ON;  /* 将变量赋值为 ON */
-	printf("%d", myLeverState); 
+	printf("%d", myLeverState);
     /* 输出结果：1 */
     /* C语言把 ON 和 OFF 翻译成了整数，按照顺序，OFF为0，ON为1 */
 }
-``` 
+```
 
 在这一段代码里，我们可以相当清楚的接收到 C 语言设计的时候的思想：
 
@@ -88,14 +88,14 @@ int main(){
 C 语言中的 enum 与 structure 具有相当高的相似性。
 那么，java 中的 enum 是否就会相应的和类具有一定的相似性呢？
 答案是肯定的，而且理论上来讲，对编译器而言，enum 实际上就是 class。
-所以在接下来的内容中，从 class 的角度理解 enum 的一些语法， 会带来一些帮助。  
+所以在接下来的内容中，从 class 的角度理解 enum 的一些语法， 会带来一些帮助。
 先来看一段代码吧，继续用我们的拉杆的模型：
 
 ```java
 public class Lever {
-    
+
     enum State{ON, OFF};    // 声明一个enum，可能出现的情况有 ON 和 OFF
-    
+
     public static void main(String[] args){
         State myLeverState = State.ON;
         System.out.println(myLeverState);  // 打印结果 ON
@@ -112,7 +112,7 @@ public class Lever {
     static class State {
         public static final State ON = new State("ON");
         public static final State OFF = new State("OFF");
-        
+
         private final String name;  // enum的名字
 
         private State(String str){   // 构造方法
@@ -184,7 +184,7 @@ public class Color implements Paint, java.io.Serializable {
 ```java
 public class Color {
     enum Colors{
-        RED, BLUE, YELLOW, GREEN, LIGHT_GREY, 
+        RED, BLUE, YELLOW, GREEN, LIGHT_GREY,
         DARK_GREY, GREY, BLACK, WHITE
     }
 }
@@ -215,7 +215,7 @@ public class Color {
         DARK_GREY(64, 64, 64),
         BLACK(0, 0, 0),
         WHITE(255,255,255);
-        
+
         private Color color;  // 在 enum 内部保存一个 Color 类的实例
 
         private Colors (int r, int g, int b){  // 新建 enum 时就将这个 Color 赋值
@@ -234,7 +234,7 @@ public class Color {
         green = g;
         blue = b;
     }
-    
+
     public static void main(String[] args){
         Color c = Color.Colors.BLUE.toColor();
     }
@@ -287,7 +287,7 @@ import java.util.EnumMap;
 public class Color {
 
     enum EnumColors{RED, BLUE, YELLOW, GREEN, LIGHT_GREY, DARK_GREY, GREY, BLACK, WHITE}
-    
+
     // 建立 EnumMap 来存储 EnumColors 与 Color 的对应关系
     static EnumMap<EnumColors, Color> colors = new EnumMap<EnumColors, Color>(EnumColors.class){
         // 通过匿名内部类复写构造方法，实现内容的初始化
@@ -336,7 +336,7 @@ public class Color {
 ## enum 的应用 —— 传参与 foreach
 
 鉴于前文中提到的一和二的优点，enum 其实可以用来做函数的参数。
-举个栗子吧，比如我们现在有一个电磁炉，工作时可以有不同的模式。  
+举个栗子吧，比如我们现在有一个电磁炉，工作时可以有不同的模式。
 如果不用 enum， 我们大概会这样写：
 
 ```java
@@ -419,6 +419,6 @@ public class Oven {
 
 ----
 
-参考文献：  
-[匿名内部类构造函数](http://blog.csdn.net/brockliu1010/article/details/12440019)  
+参考文献：
+[匿名内部类构造函数](http://blog.csdn.net/brockliu1010/article/details/12440019)
 [Java enum的用法详解 by rhino](http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html)

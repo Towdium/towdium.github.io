@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello Blog
-date: 2015-01-29T00:00:00.000Z
+date: 2016-01-29T00:00:00.000Z
 author: Author
 category: daily
 tags:
@@ -29,7 +29,7 @@ tags:
 - 来说，比如说上一点提到的 rouge，对应的版本是 1.3 。
 - 另外，一些插件的安装可能需要DevKit，这部分内容参见
 - [DevKit 在 Github 上的 Wiki](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) 。
-- 浏览器适配。这个我只能说 Font Awesome 跟遨游的兼容很有问题。 
+- 浏览器适配。这个我只能说 Font Awesome 跟遨游的兼容很有问题。
 - 所以如果你在界面上看见一些迷之方块，那个基本上都是 Font Awesome 的锅。
 - 这个以我的水平完全搞不定，对我来说解决方法只有换浏览器。
 - 所以我现在浏览器已经换到了 chrome 内核，遨游请勿念我。
