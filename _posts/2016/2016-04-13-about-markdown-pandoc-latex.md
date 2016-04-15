@@ -51,7 +51,7 @@ markdown 的出现填补了这一领域的空缺。一方面，它的语法对�
 
 ### 日常的 essay 以及 report
 
-如果你使用 atom （关于 atom 的介绍见 这里）的话，搜索安装这个插件 “markdown-pdf”，然后执行 “markdown-pdf：convert” 就可以一键将 markdown 文本转化为 pdf 文件，如果你对于排版要求比较高，你还可以搜索 “markdown-themeable-pdf”， 这个插件支持更多的样式设置，同样的，也只需要一个命令就可以生成 pdf 文件。
+如果你使用 atom （关于 atom 的介绍见 [这里][8]）的话，搜索安装这个插件 “markdown-pdf”，然后执行 “markdown-pdf：convert” 就可以一键将 markdown 文本转化为 pdf 文件，如果你对于排版要求比较高，你还可以搜索 “markdown-themeable-pdf”， 这个插件支持更多的样式设置，同样的，也只需要一个命令就可以生成 pdf 文件。
 
 另外，如果你需要 pdf 以外的文件格式，还有其他的工具来帮你转换。搜索插件 “pandoc-convert”就可以在 pdf, markdown, latex, docx, html 以及另外一大票文本格式中自由切换，当然 pandoc 的功能还不仅于此，更多的内容我们下边再说。
 
@@ -61,7 +61,7 @@ Github 的网页版是支持 markdown 的在线排版的，随便一搜，大部
 
 ### 另外，最重要的，本地预览
 
-这个在 atom 环境下只需要安装 “markdown-preview”（似乎是程序自带的包），然后执行 “markdown-preview：toggle” 就可以直接预览了，如果需要更多内容，社区上还提供了使预览和编辑窗口同步滚动的插件 “markdown-scroll-synk”，使得预览兼容 LaTeX 公式的插件 “markdown-preview-plus”（如果你不知道 LaTeX 是什么那就算了）。如果你对于 atom 还不是很熟悉，可以参考我的 [上一篇文章][8]，大概可以帮你上手 atom。
+这个在 atom 环境下只需要安装 “markdown-preview”（似乎是程序自带的包），然后执行 “markdown-preview：toggle” 就可以直接预览了，如果需要更多内容，社区上还提供了使预览和编辑窗口同步滚动的插件 “markdown-scroll-synk”，使得预览兼容 LaTeX 公式的插件 “markdown-preview-plus”（如果你不知道 LaTeX 是什么那就算了）。
 
 ![markdown效果](/img/posts/about-markdown-pandoc-latex_1.png)
 
