@@ -282,7 +282,7 @@ ga('send', 'pageview');
 <!--article  >
   <div style="background-image: url('/')"/>
   <header style="background-image: url('https://source.unsplash.com/category/nature/2600x500')"-->
-  <link type="application/atom+xml" rel="alternate" href="https://towdium.github.io/feed.xml" title="" />
+  <link type="application/atom+xml" rel="alternate" href="https://towdium.github.io/feed.xml" />
     <h1 class="title">浅析 Java 中 enum 枚举与 C 的异同以及使用方法</h1>
     <p id="subtitletrans" class="subtitlecontainer">
     <a class="subtitle">2016年01月30日</a>
@@ -302,7 +302,7 @@ ga('send', 'pageview');
 C 语言是没有类的，取而代之的是 structure （结构体），
 你可以把它理解成只有变量没有方法的类,我们在后边会用到。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
 </span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
     <span class="cm">/*
@@ -328,7 +328,7 @@ C 语言是没有类的，取而代之的是 structure （结构体），
 <p>但是这句话未必经得起考究。很明显，变量声明时，声明 enum 的方式和其它变量并不一致,
 这也就意味着，enum在本质上可能未必这么简单：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">i</span><span class="p">;</span>  <span class="cm">/* 整型声明 */</span>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="n">i</span><span class="p">;</span>  <span class="cm">/* 整型声明 */</span>
 <span class="kt">float</span> <span class="n">f</span><span class="p">;</span>  <span class="cm">/* 浮点型声明 */</span>
 <span class="k">enum</span> <span class="n">Type</span><span class="p">{</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span> <span class="p">}</span> <span class="n">e</span><span class="p">;</span>  <span class="cm">/* 枚举型声明 */</span>
 </code></pre>
@@ -339,7 +339,7 @@ C 语言是没有类的，取而代之的是 structure （结构体），
 我们很快就想到了 structure 的定义。如果我们要刻意将 structure 的声明逼近 enum，
 代码也可以这样写：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
 </span>
 <span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
     <span class="cm">/* 新建 LeverState 类型的结构体，新建一个实例为 leverState */</span>
@@ -381,11 +381,11 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 所以在接下来的内容中，从 class 的角度理解 enum 的一些语法， 会带来一些帮助。
 先来看一段代码吧，继续用我们的拉杆的模型：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lever</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lever</span> <span class="o">{</span>
 
     <span class="kd">enum</span> <span class="n">State</span><span class="o">{</span><span class="n">ON</span><span class="o">,</span> <span class="n">OFF</span><span class="o">};</span>    <span class="c1">// 声明一个enum，可能出现的情况有 ON 和 OFF</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">State</span> <span class="n">myLeverState</span> <span class="o">=</span> <span class="n">State</span><span class="o">.</span><span class="na">ON</span><span class="o">;</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">myLeverState</span><span class="o">);</span>  <span class="c1">// 打印结果 ON</span>
     <span class="o">}</span>
@@ -396,7 +396,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 <p>如果这一段代码还不够简洁易懂的话，不如参考下边这段代码。鉴于 java 多样的修饰符，
 我们已经几乎可以完全用 class 的方式实现 enum 了，这在 C 语言里是做不到的：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lever</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lever</span> <span class="o">{</span>
 
     <span class="kd">static</span> <span class="kd">class</span> <span class="nc">State</span> <span class="o">{</span>
         <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">State</span> <span class="n">ON</span> <span class="o">=</span> <span class="k">new</span> <span class="n">State</span><span class="o">(</span><span class="s">"ON"</span><span class="o">);</span>
@@ -404,17 +404,17 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
         <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>  <span class="c1">// enum的名字</span>
 
-        <span class="kd">private</span> <span class="n">State</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">){</span>   <span class="c1">// 构造方法</span>
+        <span class="kd">private</span> <span class="nf">State</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">){</span>   <span class="c1">// 构造方法</span>
             <span class="n">name</span> <span class="o">=</span> <span class="n">str</span><span class="o">;</span>
         <span class="o">}</span>
 
         <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="n">String</span> <span class="n">toString</span><span class="o">(){</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">(){</span>
             <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
         <span class="o">}</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">State</span> <span class="n">myLeverState</span> <span class="o">=</span> <span class="n">State</span><span class="o">.</span><span class="na">ON</span><span class="o">;</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">myLeverState</span><span class="o">);</span>    <span class="c1">// 打印结果仍然是 ON</span>
     <span class="o">}</span>
@@ -440,11 +440,11 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 <p>说到这里，如果你对于 enum 本质是 class 这件事还不是十分确信的话，
 我们再来看一段代码：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lever</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lever</span> <span class="o">{</span>
 
     <span class="kd">enum</span> <span class="n">State</span><span class="o">{</span> <span class="n">ON</span><span class="o">,</span> <span class="n">OFF</span> <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">State</span> <span class="n">myLeverState</span> <span class="o">=</span> <span class="n">State</span><span class="o">.</span><span class="na">ON</span><span class="o">.</span><span class="na">OFF</span><span class="o">;</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">myLeverState</span><span class="o">);</span> <span class="c1">// 打印结果 OFF</span>
     <span class="o">}</span>
@@ -460,7 +460,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 <p>我们到 java 源代码里随便找点东西看看，嗯，就你了 Color （在 java.awt 下）。
 一打开我们就发现满眼都是常量,一下子占了两百行。我摘抄一段源码感受一下：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="kd">implements</span> <span class="n">Paint</span><span class="o">,</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="kd">implements</span> <span class="n">Paint</span><span class="o">,</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">Color</span> <span class="n">white</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Color</span><span class="o">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="o">);</span>
     <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">Color</span> <span class="n">WHITE</span> <span class="o">=</span> <span class="n">white</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="n">Color</span> <span class="n">lightGray</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Color</span><span class="o">(</span><span class="mi">192</span><span class="o">,</span> <span class="mi">192</span><span class="o">,</span> <span class="mi">192</span><span class="o">);</span>
@@ -473,7 +473,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
 <p>虽说也没什么不对的，不过总觉得不太好。如果我们用枚举来做呢？</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
     <span class="kd">enum</span> <span class="n">Colors</span><span class="o">{</span>
         <span class="n">RED</span><span class="o">,</span> <span class="n">BLUE</span><span class="o">,</span> <span class="n">YELLOW</span><span class="o">,</span> <span class="n">GREEN</span><span class="o">,</span> <span class="n">LIGHT_GREY</span><span class="o">,</span>
         <span class="n">DARK_GREY</span><span class="o">,</span> <span class="n">GREY</span><span class="o">,</span> <span class="n">BLACK</span><span class="o">,</span> <span class="n">WHITE</span>
@@ -494,7 +494,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
 <p>思路一：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
 
     <span class="kd">enum</span> <span class="n">Colors</span><span class="o">{</span>
         <span class="n">RED</span><span class="o">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">),</span>
@@ -509,11 +509,11 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
         <span class="kd">private</span> <span class="n">Color</span> <span class="n">color</span><span class="o">;</span>  <span class="c1">// 在 enum 内部保存一个 Color 类的实例</span>
 
-        <span class="kd">private</span> <span class="n">Colors</span> <span class="o">(</span><span class="kt">int</span> <span class="n">r</span><span class="o">,</span> <span class="kt">int</span> <span class="n">g</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">){</span>  <span class="c1">// 新建 enum 时就将这个 Color 赋值</span>
+        <span class="kd">private</span> <span class="nf">Colors</span> <span class="o">(</span><span class="kt">int</span> <span class="n">r</span><span class="o">,</span> <span class="kt">int</span> <span class="n">g</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">){</span>  <span class="c1">// 新建 enum 时就将这个 Color 赋值</span>
             <span class="n">color</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Color</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">g</span><span class="o">,</span> <span class="n">b</span><span class="o">);</span>
         <span class="o">}</span>
 
-        <span class="kd">public</span> <span class="n">Color</span> <span class="n">toColor</span><span class="o">(){</span>   <span class="c1">// 需要时通过特定的函数调用</span>
+        <span class="kd">public</span> <span class="n">Color</span> <span class="nf">toColor</span><span class="o">(){</span>   <span class="c1">// 需要时通过特定的函数调用</span>
             <span class="k">return</span> <span class="n">color</span><span class="o">;</span>
         <span class="o">}</span>
     <span class="o">}</span>
@@ -526,7 +526,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
         <span class="n">blue</span> <span class="o">=</span> <span class="n">b</span><span class="o">;</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">Color</span> <span class="n">c</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="na">Colors</span><span class="o">.</span><span class="na">BLUE</span><span class="o">.</span><span class="na">toColor</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
@@ -535,12 +535,12 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
 <p>思路二：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
 
     <span class="kd">enum</span> <span class="n">Colors</span><span class="o">{</span>
         <span class="n">RED</span><span class="o">,</span> <span class="n">BLUE</span><span class="o">,</span> <span class="n">YELLOW</span><span class="o">,</span> <span class="n">GREEN</span><span class="o">,</span> <span class="n">LIGHT_GREY</span><span class="o">,</span> <span class="n">DARK_GREY</span><span class="o">,</span> <span class="n">GREY</span><span class="o">,</span> <span class="n">BLACK</span><span class="o">,</span> <span class="n">WHITE</span><span class="o">;</span>
 
-        <span class="kd">public</span> <span class="n">Color</span> <span class="n">toColor</span><span class="o">(){</span>   <span class="c1">// 需要时新建并返回对象</span>
+        <span class="kd">public</span> <span class="n">Color</span> <span class="nf">toColor</span><span class="o">(){</span>   <span class="c1">// 需要时新建并返回对象</span>
             <span class="k">switch</span> <span class="o">(</span><span class="k">this</span><span class="o">){</span>
                 <span class="k">case</span> <span class="nl">RED:</span> <span class="k">return</span> <span class="k">new</span> <span class="n">Color</span><span class="o">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
                 <span class="k">case</span> <span class="nl">YELLOW:</span> <span class="k">return</span> <span class="k">new</span> <span class="n">Color</span><span class="o">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">255</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
@@ -564,7 +564,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
         <span class="n">blue</span> <span class="o">=</span> <span class="n">b</span><span class="o">;</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">Color</span> <span class="n">c</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="na">Colors</span><span class="o">.</span><span class="na">BLUE</span><span class="o">.</span><span class="na">toColor</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
@@ -573,7 +573,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
 <p>思路三：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.EnumMap</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.EnumMap</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Color</span> <span class="o">{</span>
 
@@ -603,7 +603,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
         <span class="n">blue</span> <span class="o">=</span> <span class="n">b</span><span class="o">;</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="c1">// 通过 map 提取 Color 类型的对象</span>
         <span class="n">Color</span> <span class="n">c</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="na">colors</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">EnumColors</span><span class="o">.</span><span class="na">BLUE</span><span class="o">);</span>
     <span class="o">}</span>
@@ -632,14 +632,14 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 举个栗子吧，比如我们现在有一个电磁炉，工作时可以有不同的模式。
 如果不用 enum， 我们大概会这样写：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.*;</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.*;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Oven</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">WORK_MODE_LOW</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">WORK_MODE_MID</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">WORK_MODE_HIGH</span> <span class="o">=</span> <span class="mi">3</span><span class="o">;</span>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="n">cook</span><span class="o">(</span><span class="kt">int</span> <span class="n">mode</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">cook</span><span class="o">(</span><span class="kt">int</span> <span class="n">mode</span><span class="o">){</span>
         <span class="n">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Working in "</span><span class="o">);</span>
         <span class="k">switch</span> <span class="o">(</span><span class="n">mode</span><span class="o">){</span>
             <span class="k">case</span> <span class="nl">WORK_MODE_LOW:</span> <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"LOW mode"</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
@@ -648,7 +648,7 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
         <span class="o">}</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">Oven</span> <span class="n">oven</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Oven</span><span class="o">();</span>
         <span class="n">oven</span><span class="o">.</span><span class="na">cook</span><span class="o">(</span><span class="n">WORK_MODE_MID</span><span class="o">);</span>  <span class="c1">// 输出 Working in MID mode</span>
     <span class="o">}</span>
@@ -658,16 +658,16 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 
 <p>上边大概不用我写注释了吧（笑）。有了 enum 之后， 我们可以这样写：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.*;</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.*;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Oven</span> <span class="o">{</span>
     <span class="kd">enum</span> <span class="n">CookMode</span><span class="o">{</span><span class="n">LOW</span><span class="o">,</span> <span class="n">MID</span><span class="o">,</span> <span class="n">HIGH</span><span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="n">cook</span><span class="o">(</span><span class="n">CookMode</span> <span class="n">mode</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">cook</span><span class="o">(</span><span class="n">CookMode</span> <span class="n">mode</span><span class="o">){</span>
         <span class="n">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Working in "</span> <span class="o">+</span> <span class="n">mode</span> <span class="o">+</span> <span class="s">" mode!"</span><span class="o">);</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">Oven</span> <span class="n">oven</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Oven</span><span class="o">();</span>
         <span class="n">oven</span><span class="o">.</span><span class="na">cook</span><span class="o">(</span><span class="n">CookMode</span><span class="o">.</span><span class="na">MID</span><span class="o">);</span>  <span class="c1">// 输出 Working in MID mode!</span>
     <span class="o">}</span>
@@ -681,16 +681,16 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 说道这里有没有想到什么？集合是可以丢到 foreach 里边循环的！
 所以，我们还可以这样玩儿：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.*;</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">System</span><span class="o">.*;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Oven</span> <span class="o">{</span>
     <span class="kd">enum</span> <span class="n">CookMode</span><span class="o">{</span><span class="n">LOW</span><span class="o">,</span> <span class="n">MID</span><span class="o">,</span> <span class="n">HIGH</span><span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="n">cook</span><span class="o">(</span><span class="n">CookMode</span> <span class="n">mode</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">cook</span><span class="o">(</span><span class="n">CookMode</span> <span class="n">mode</span><span class="o">){</span>
         <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Working in "</span> <span class="o">+</span> <span class="n">mode</span> <span class="o">+</span> <span class="s">" mode!"</span><span class="o">);</span>
     <span class="o">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
         <span class="n">Oven</span> <span class="n">oven</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Oven</span><span class="o">();</span>
         <span class="k">for</span><span class="o">(</span><span class="n">CookMode</span> <span class="n">mode</span> <span class="o">:</span> <span class="n">CookMode</span><span class="o">.</span><span class="na">values</span><span class="o">()){</span>
             <span class="n">oven</span><span class="o">.</span><span class="na">cook</span><span class="o">(</span><span class="n">mode</span><span class="o">);</span>

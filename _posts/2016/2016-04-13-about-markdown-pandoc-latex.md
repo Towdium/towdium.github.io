@@ -61,7 +61,7 @@ Github 的网页版是支持 markdown 的在线排版的，随便一搜，大部
 
 ### 另外，最重要的，本地预览
 
-这个在 atom 环境下只需要安装 “markdown-preview”（似乎是程序自带的包），然后执行 “markdown-preview：toggle” 就可以直接预览了，如果需要更多内容，社区上还提供了使预览和编辑窗口同步滚动的插件 “markdown-scroll-synk”，使得预览兼容 LaTeX 公式的插件 “markdown-preview-plus”（如果你不知道 LaTeX 是什么那就算了）。
+这个在 atom 环境下只需要安装 “markdown-preview”（似乎是程序自带的包），然后执行 “markdown-preview：toggle” 就可以直接预览了，如果需要更多内容，社区上还提供了使预览和编辑窗口同步滚动的插件 “markdown-scroll-sync”，使得预览兼容 LaTeX 公式的插件 “markdown-preview-plus”（如果你不知道 LaTeX 是什么那就算了）。
 
 ![markdown效果](/img/posts/about-markdown-pandoc-latex_1.png)
 

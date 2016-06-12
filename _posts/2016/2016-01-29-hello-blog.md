@@ -14,28 +14,28 @@ tags:
 
 以前写东西怎么也要酝酿个几天，好比撒尿也要憋一阵子才能尿的带劲。 不过这篇我是丝毫没有酝酿了，因为这两天一直在忙着搭建这个网站， 写这点玩意儿也只是为了记录一下这个工作的阶段性完成。 作为一个前端根本还没入门的新手，搞这些东西我完全就只能顾着蒙逼了。 网站上教程说的到是好，下一个 ruby，下一个 Jekyll， 下一个模版，构建一下，传到 Github 就算是完工了，对此我只能凄惨一笑。 下边我把遇到的问题列一下，给各位做一个参考。
 - jekyll的版本并不那么简单。
-- 现在似乎是3.几吧如果我没记错的话，但是很多模版都是基于2.几开发的，
-- 这就会到来一些兼容问题。比如 jekyll3 的 highlighter 大多用 rouge，
-- 而 jekyll2 的 highlighter 经常见到 pygments，
-- 而这个 pygments 的运行是依赖Python的，虽说我电脑上原本就有 Python，
-- 不过对于一部分人来说也有点繁琐。另外就算装了 Python，pygments 也未必能正常运行，
-- 昨天一天 Liquid 就在不停给我报一个空数组的异常，
-- 如果你是直接用命令下载的 Jekyll，
-- 而且又不停报一些奇怪的异常，先检查 highlighter 有没有改成 rouge。
-- Ruby gem 下载虽然方便，但是不同的模版要求不同的 gem ，
-- 于是就在不停的下这个下那个，然后又是一堆版本冲突。
-- 这个么，在每个 gem 的主页上都会写明需要的其它 gem 的版本，
-- 拿下面这个 [Jekyll 的页面](https://rubygems.org/gems/jekyll)
-- 来说，比如说上一点提到的 rouge，对应的版本是 1.3 。
-- 另外，一些插件的安装可能需要DevKit，这部分内容参见
-- [DevKit 在 Github 上的 Wiki](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) 。
+ 现在似乎是3.几吧如果我没记错的话，但是很多模版都是基于2.几开发的，
+ 这就会到来一些兼容问题。比如 jekyll3 的 highlighter 大多用 rouge，
+ 而 jekyll2 的 highlighter 经常见到 pygments，
+ 而这个 pygments 的运行是依赖Python的，虽说我电脑上原本就有 Python，
+ 不过对于一部分人来说也有点繁琐。另外就算装了 Python，pygments 也未必能正常运行，
+ 昨天一天 Liquid 就在不停给我报一个空数组的异常，
+ 如果你是直接用命令下载的 Jekyll，
+ 而且又不停报一些奇怪的异常，先检查 highlighter 有没有改成 rouge。
+ Ruby gem 下载虽然方便，但是不同的模版要求不同的 gem ，
+ 于是就在不停的下这个下那个，然后又是一堆版本冲突。
+ 这个么，在每个 gem 的主页上都会写明需要的其它 gem 的版本，
+ 拿下面这个 [Jekyll 的页面](https://rubygems.org/gems/jekyll)
+ 来说，比如说上一点提到的 rouge，对应的版本是 1.3 。
+ 另外，一些插件的安装可能需要DevKit，这部分内容参见
+ [DevKit 在 Github 上的 Wiki](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit) 。
 - 浏览器适配。这个我只能说 Font Awesome 跟遨游的兼容很有问题。
-- 所以如果你在界面上看见一些迷之方块，那个基本上都是 Font Awesome 的锅。
-- 这个以我的水平完全搞不定，对我来说解决方法只有换浏览器。
-- 所以我现在浏览器已经换到了 chrome 内核，遨游请勿念我。
+ 所以如果你在界面上看见一些迷之方块，那个基本上都是 Font Awesome 的锅。
+ 这个以我的水平完全搞不定，对我来说解决方法只有换浏览器。
+ 所以我现在浏览器已经换到了 chrome 内核，遨游请勿念我。
 - 插件安装。在搭建完主体网页之后还有一些插件可以装，
-- 比如评论区和分享插件，由于我原来并不懂jekyll的结构，
-- 熟悉这些设定也花了一些时间，这些内容如果有时间的话我单开一篇来写好了。
+ 比如评论区和分享插件，由于我原来并不懂jekyll的结构，
+ 熟悉这些设定也花了一些时间，这些内容如果有时间的话我单开一篇来写好了。
 
 ![Jekyll](/img/posts/hello_blog_1.jpg)
 

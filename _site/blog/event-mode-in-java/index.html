@@ -282,7 +282,7 @@ ga('send', 'pageview');
 <!--article  >
   <div style="background-image: url('/')"/>
   <header style="background-image: url('https://source.unsplash.com/category/nature/2600x500')"-->
-  <link type="application/atom+xml" rel="alternate" href="https://towdium.github.io/feed.xml" title="" />
+  <link type="application/atom+xml" rel="alternate" href="https://towdium.github.io/feed.xml" />
     <h1 class="title">关于java事件处理模式的纠结日常</h1>
     <p id="subtitletrans" class="subtitlecontainer">
     <a class="subtitle">2016年03月31日</a>
@@ -311,15 +311,15 @@ ga('send', 'pageview');
 
 <p>这是一个被广泛使用的事件模型，上层组件收到时间信息的时候，就将事件内容转交给下一层对象，下一层对象处理完事件后，将结果返回给上层对象。如果还不是很确切的话，看代码好了：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
 <span class="o">}</span>
 
 <span class="kd">class</span> <span class="nc">Panel</span> <span class="kd">extends</span> <span class="n">Component</span><span class="o">{</span>
     <span class="kd">public</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">Component</span><span class="o">&gt;</span> <span class="n">components</span><span class="o">;</span>  <span class="c1">// 存储所有下层对象的应用</span>
 
     <span class="nd">@Override</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">){</span>    <span class="c1">// 处理点击事件</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">){</span>    <span class="c1">// 处理点击事件</span>
         <span class="k">for</span><span class="o">(</span><span class="n">Component</span> <span class="n">comp</span> <span class="o">:</span> <span class="n">components</span><span class="o">){</span>   <span class="c1">// 逐个调用下层对象进行事件处理</span>
             <span class="k">if</span><span class="o">(</span><span class="n">comp</span><span class="o">.</span><span class="na">onClick</span><span class="o">(</span><span class="n">mouseX</span><span class="o">,</span> <span class="n">mouseY</span><span class="o">)){</span>
                 <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>    <span class="c1">// 如果事件被处理，返回结果</span>
@@ -339,8 +339,8 @@ ga('send', 'pageview');
 
 <p>当然这种模式也有很多实现方式，先说最简单的，下层对象直接触发上层对象处理。先来看代码：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
 <span class="o">}</span>
 
 <span class="kd">class</span> <span class="nc">Panel</span> <span class="kd">extends</span> <span class="n">Component</span><span class="o">{</span>
@@ -350,13 +350,13 @@ ga('send', 'pageview');
         <span class="n">components</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Button</span><span class="o">(</span><span class="k">this</span><span class="o">));</span>
     <span class="o">}</span>
 
-    <span class="kt">void</span> <span class="n">actionPerformed</span><span class="o">(){</span>
+    <span class="kt">void</span> <span class="nf">actionPerformed</span><span class="o">(){</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"事件被处理啦！"</span><span class="o">);</span>
     <span class="o">}</span>
 
     <span class="c1">// 顺次触发所有组件并反馈结果</span>
     <span class="nd">@Override</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">){</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">){</span>
         <span class="k">for</span><span class="o">(</span><span class="n">Component</span> <span class="n">comp</span> <span class="o">:</span> <span class="n">components</span><span class="o">){</span>
             <span class="k">if</span><span class="o">(</span><span class="n">comp</span><span class="o">.</span><span class="na">onClick</span><span class="o">(</span><span class="n">mouseX</span><span class="o">,</span> <span class="n">mouseY</span><span class="o">)){</span>
                 <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
@@ -382,12 +382,12 @@ ga('send', 'pageview');
 
 <p>感觉代码已经难以避免的变长了（笑）。从代码的长度也可以比较明白的显示出结构的复杂程度。在这种情况下，下层对象直接持有上层引用，一旦接收到事件，就可以直接调用。但是这样弊端也很明显，这种触发形式是内建在代码里的，所以拓展性很不好。于是我们将子类接收到事件时需要进行的动作装在一个列表里，并且允许其他类来增减，这就是普遍使用的监听者模型。插一段代码吧：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
 <span class="o">}</span>
 
 <span class="kd">interface</span> <span class="nc">ActionListener</span><span class="o">{</span>
-    <span class="kt">void</span> <span class="n">actionPerformed</span><span class="o">();</span>
+    <span class="kt">void</span> <span class="nf">actionPerformed</span><span class="o">();</span>
 <span class="o">}</span>
 
 <span class="kd">class</span> <span class="nc">Panel</span> <span class="kd">extends</span> <span class="n">Component</span><span class="o">{</span>
@@ -400,7 +400,7 @@ ga('send', 'pageview');
                 <span class="c1">// 给按钮添加监听器</span>
                 <span class="n">actionListeners</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">ActionListener</span><span class="o">(){</span>
                     <span class="nd">@Override</span>
-                    <span class="kt">void</span> <span class="n">actionPerformed</span><span class="o">(){</span>
+                    <span class="kt">void</span> <span class="nf">actionPerformed</span><span class="o">(){</span>
                         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"发现事件！"</span><span class="o">);</span>
                     <span class="o">}</span>
                 <span class="o">});</span>
@@ -410,7 +410,7 @@ ga('send', 'pageview');
 
     <span class="c1">// 顺次触发所有组件并反馈结果</span>
     <span class="nd">@Override</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">){</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">){</span>
         <span class="k">for</span><span class="o">(</span><span class="n">Component</span> <span class="n">comp</span> <span class="o">:</span> <span class="n">components</span><span class="o">){</span>
             <span class="k">if</span><span class="o">(</span><span class="n">comp</span><span class="o">.</span><span class="na">onClick</span><span class="o">(</span><span class="n">mouseX</span><span class="o">,</span> <span class="n">mouseY</span><span class="o">)){</span>
                 <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
@@ -441,12 +441,12 @@ ga('send', 'pageview');
 
 <p>在这一结构中，系统维护着一套事件总线，一旦有事件发生，对象都将发生的事打包发布到事件总线，再由事件总线转交给登记的订阅者。这一模式最大的优势在于他是基于类的，订阅者只需要告知总线自己订阅的事件类型，而不必要获得事件的发布者。在总线转交事件的过程中，发布者的引用也被一并转交，供监听者进行处理，这样，拿不到引用的问题就被解决了。不过，我们的结构不得不被再一次扩大（笑）。不过好在我们这次的内容已经跟 <code class="highlighter-rouge">Panel</code> 类没什么关系了，所以我们的代码也许能少一些。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
-    <span class="kt">boolean</span> <span class="n">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Component</span><span class="o">{</span>
+    <span class="kt">boolean</span> <span class="nf">onClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">mouseX</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mouseY</span><span class="o">);</span>
 <span class="o">}</span>
 
 <span class="kd">interface</span> <span class="nc">ActionListener</span><span class="o">{</span>
-    <span class="kt">void</span> <span class="n">actionPerformed</span><span class="o">(</span><span class="n">Event</span> <span class="n">e</span><span class="o">);</span>
+    <span class="kt">void</span> <span class="nf">actionPerformed</span><span class="o">(</span><span class="n">Event</span> <span class="n">e</span><span class="o">);</span>
 <span class="o">}</span>
 
 <span class="kd">class</span> <span class="nc">Event</span><span class="o">{</span>
@@ -464,7 +464,7 @@ ga('send', 'pageview');
 <span class="kd">static</span> <span class="kd">class</span> <span class="nc">EventBus</span><span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">ActionListener</span><span class="o">&gt;</span> <span class="n">actionListeners</span><span class="o">;</span>
 
-    <span class="kd">static</span> <span class="kt">void</span> <span class="n">postEvent</span><span class="o">(</span><span class="n">Event</span> <span class="n">e</span><span class="o">){</span>
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">postEvent</span><span class="o">(</span><span class="n">Event</span> <span class="n">e</span><span class="o">){</span>
         <span class="k">for</span><span class="o">(</span><span class="n">ActionListener</span> <span class="n">listener</span> <span class="o">:</span> <span class="n">actionListeners</span><span class="o">){</span>
             <span class="n">listener</span><span class="o">.</span><span class="na">actionPerformed</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
         <span class="o">}</span>
