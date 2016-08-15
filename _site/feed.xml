@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Towdium&#39;s here</title>
-    <description>关于前端与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
+    <description>这里是 Towdium 的个人博客，分享我的一些学习记录，以及日常的碎碎念</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Aug 2016 14:10:40 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Aug 2016 14:10:40 +0800</lastBuildDate>
+    <pubDate>Mon, 15 Aug 2016 14:43:02 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Aug 2016 14:43:02 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
