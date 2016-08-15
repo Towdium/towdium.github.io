@@ -3,6 +3,8 @@ layout: page
 description: "The misfits. The rebels. The troublemakers. The round pegs in the square holes."
 ---
 
+<link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml" title="RSS">
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
