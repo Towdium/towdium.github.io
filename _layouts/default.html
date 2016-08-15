@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" lang="zh-CN">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" lang="zh-CN">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" lang="zh-CN">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="zh-CN" class="js">
-<!--<![endif]-->
+<html lang="en">
 
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ab70173edd5fd6" async="async"></script>
+{% include head.html %}
 
-  {% include head.html %}
-	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
-		<div id="page-container">
-    		{% include header.html %}
-    		<div id="et-main-area">
-      			{{ content }}
-    		</div> <!-- #et-main-area -->
-		</div> <!-- #page-container -->
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_sharing_toolbox" align="center"></div>
-		{% include footer.html %}
-    {% include script.html %}
-    
-  </body>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
 </html>

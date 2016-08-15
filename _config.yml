@@ -1,88 +1,89 @@
-# SITE CONFIGURATION
-baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
-url: "https://towdium.github.io" # the base hostname & protocol for your site
-imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random""https://source.unsplash.com/category/nature/2600x500"
+# Site settings
+title: Towdium's here
+SEOTitle: Towdium's here | A personal blog
+header-img: https://source.unsplash.com/category/nature/2600x500
+email: towdium@gmail.com
+description: "这里是 Towdium 的个人博客，分享我的一些学习记录，以及日常的碎碎念"
+keyword: "Towdium"
+#url: "http://huangxuan.me"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: Towdium's here
-  #avatar: avatar.png
-  hometitle: Home #display on navigation menu.
-  yoursitetitle: Towdium
-  gravatar: # Email MD5 hash
-  description: "personal blog of Towdium" # used by search engines
-  visiblewords: 300
-  # Header and footer text
-  header_text: >
-     The misfits. The rebels. The troublemakers. The round pegs in the square holes.
 
-  header_text_feature_image: img/bg.jpg
-  place_holder_image: img/bg.jpg
-  footer_text: >
-   <a href="https://yoursite.com">Towdium</a>
 
-  # Icons
-  rss: false
-  email_address: "towdium@gmail.com" # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: "Towdium"
-  weibo: "u/5092127194"
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: "towdium"
-  wordpress:
-  youtube:
+# SNS settings
+RSS: true
+weibo_username:     5092127194
+#zhihu_username:
+github_username:    towdium
+#twitter_username:  huxpro
+#facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
 
-  # Scripts
-  google_analytics: UA-73095900-1 # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname: Towdium
-  katex: true # Enable if using math markup
 
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  #str_next: "Next"
-  #str_prev: "Prev"
-  str_continue_reading: "Continue Reading..."
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-enforce_ssl:
-paginate: 5
-paginate_path: "blog/page:num"
-permalink: blog/:title/
-
-# Posted in ... with ...
-sechby:
-  category:   #in
-  tag:   #with
-
-# BUILD SETTINGS
-markdown: kramdown
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-gems:
-  - jekyll-paginate
-  - jekyll-feed
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: Towdium
+
+# Duoshuo settings
+#duoshuo_username: huxblog
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-73095900-1'            # Format: UA-xxxxxx-xx
+ga_domain: towdium.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "A foolish engineer, a hobbyist programmer and a kindergarden English speaker."
+sidebar-avatar: /img/site/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "Shell Cottage",
+        href: "http://shellcottage.me/"
+    }
+]

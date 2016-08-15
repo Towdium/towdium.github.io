@@ -1,587 +1,576 @@
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" lang="zh-CN">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" lang="zh-CN">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" lang="zh-CN">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="zh-CN" class="js">
-<!--<![endif]-->
+<html lang="en">
 
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ab70173edd5fd6" async="async"></script>
-
-  
-
-	
-
-	
 <head>
-	<meta charset="utf-8">
-	<title> Towdium's here</title>
-	<meta name="description" content="personal blog of Towdium">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-Frame-Options" content="sameorigin">
-	<!-- CSS -->
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
-	<link rel="stylesheet" href="/css/post.style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="Towdium">
+    <link rel="shortcut icon" href="/img/site/favicon.ico">
 
-	<script type='text/javascript' src="/js/jquery.js"></script>
-	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+    <title>Towdium's here | A personal blog</title>
 
-	<!--Favicon-->
-	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	
-	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
-	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
-	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
-	<!-- Canonical -->
-	<link rel="canonical" href="https://towdium.github.io/">
+    <link rel="canonical" href="/">
 
-	<!-- RSS -->
-	<link rel="alternate" type="application/atom+xml" title="Towdium's here" href="https://towdium.github.io/feed.xml" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-	<!-- Font Awesome -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
 
-	<!-- Google Fonts -->
-	
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
-	
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 
-	<!-- KaTeX -->
-	
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
-	
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	<!-- Google Analytics -->
-	
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-73095900-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
 
-	<script type="text/javascript">
-    var host = "";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Towdium's here</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/archives/">Archives</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 <script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('https://source.unsplash.com/category/nature/2600x500')">
+<div style="background: rgba(0, 0, 0,0.5);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Towdium's here</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">The misfits. The rebels. The troublemakers. The round pegs in the square holes.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2016/04/13/about-markdown-pandoc-latex/">
+        <h2 class="post-title">
+            关于 markdown， pandoc 和 LaTeX 的入门安利
+        </h2>
+        
+        <div class="post-content-preview">
+            前言
+
+鉴于我的逗比室友还在码他的 matlab 代码，我已经无所事事到了一定境界，于是就只好开始码这篇新文章。对，你没有想错，现在的这段文字，是我在学校机房里写下的（笑）。今天要说的呢，是关于 atom 环境下关于 LaTex，markdown，以及 pandoc 写作的入门。对于一些人来说这可能有点陌生，但是别紧张，这本身是非常容易学习的，而且掌握这些内容之后，你的写作效率会有明显的提升...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Author on April 13, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2016/04/05/introduction-of-atom/">
+        <h2 class="post-title">
+            一发 Atom 的日常安利
+        </h2>
+        
+        <div class="post-content-preview">
+            说出来不怕笑话，这篇文章是我打的第二次。因为说好了 Atom 有良好的 Github 支持，不演示一下也说不过去，于是我就跑去研究了一下各种 Github 的兼容内容，然后，如你所想，忘了保存。不过这也没啥，一年不碰到几次忘记保存之类的蛋疼事件，都不好意思说经常工作（笑）。现在其实是期中考试周，你可能要问，期中考试不好好考，发什么贴？实话说期中考试这段时间可能要算得上是我开学以来最清闲的几天...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Author on April 5, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/03/31/event-mode-in-java/">
+        <h2 class="post-title">
+            关于java事件处理模式的纠结日常
+        </h2>
+        
+        <div class="post-content-preview">
+            写在前边
+
+
+  想到这个空间还算是挺私人的，所以以后可能写东西之前就会更一点无聊的日常，不然搞得一本正经的有点怪怪的（笑）。这次要说的呢是我目前手上mod的开发问题。目前的开发呢已经逼近尾声了，在仅有的几个计划功能开发完之后，大概会补一个1.7的版本，如果我真的能搞定1.7的材质以及nei的api的话（雾）。这个就是我最近失踪的原因啦，而且因为又开学了有可能还会失踪一段时间。就是这样啦。
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Author on March 31, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/01/30/usage-of-enum-in-java/">
+        <h2 class="post-title">
+            浅析 Java 中 enum 枚举与 C 的异同以及使用方法
+        </h2>
+        
+        <div class="post-content-preview">
+            enum 的前世今生 —— C 与 Java
+
+相信有不少小伙伴儿们刚开始接触 enum （枚举）的时候和笔者的想法是一样的：
+“我知道 Java 里边结构主要就是 类，方法，变量，这个枚举是个什么玩意？”
+这个问题现在解决可能还为时过早，我们不妨先看一段 C 的代码，
+来看看 enum 在 C 中是怎样的存在。没有 C 基础的小伙伴儿也别激动，
+我尽量把它写的简单一些，没有基础应该也能看懂...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Author on January 30, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/01/30/MIT-Q&A/">
+        <h2 class="post-title">
+            关于MIT许可的常见问题及解答
+        </h2>
+        
+        <div class="post-content-preview">
+            前言
+
+在百度上转了一圈，发现国内对于这些许可什么的说明并不充分，大多是集中于不同许可的异同，
+但是对于实际操作中的一些问题，解释的文章并不是很多。比如说我要去使用别人项目里的片段，
+我这边的项目的许可是不是有特殊的要求？GPL的传染性是很明显的，
+但是在实际操作中，不同许可的混合就会带来一些麻烦，我去谷歌了一篇
+MIT License FAQ ,
+是由Tawtech公司写的。
+现把它翻译成...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Author on January 30, 2016
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2016/01/29/hello-blog/">
+        <h2 class="post-title">
+            Hello Blog
+        </h2>
+        
+        <div class="post-content-preview">
+            说起来，已经有多久没有用中文写过大于四百字的文章了？ 记得高三的时候对文字兴趣可大了，当时每到自习课我都要写黄文，一写就能写好几张， 现在反而没有当时那种劲头了。 想起来从那时起，已经很久没有写一些记录性的东西了，中间在新浪更过两篇，QQ更过两篇，又感觉太过矫情，删掉了。所以跑到Github pages来更这个博客， 就像是一个归档一样的东西，不然以后想起来这两年干了啥， 不要只想到赶不完的...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Author on January 29, 2016
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#daily" title="daily" rel="2">
+                                    daily
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#java" title="java" rel="2">
+                                    java
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#atom" title="atom" rel="2">
+                                    atom
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <img src="/img/site/avatar.jpg" />
+                        
+                        
+                            <p>A foolish engineer, a hobbyist programmer and a kindergarden English speaker.</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="/feed.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="http://weibo.com/5092127194">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/towdium">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://shellcottage.me/">Shell Cottage</a></li>
+                    
+                </ul>
+                
+    		</div>
+        
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/5092127194">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/towdium">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Towdium's here 2016
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+        <div class="addthis_sharing_toolbox" align="center"></div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-73095900-1';
+    var _gaDomain = 'towdium.github.io';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-73095900-1', 'auto');
-ga('send', 'pageview');
-
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
 </script>
- 
-</head>
 
-	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
-		<div id="page-container">
-    		<header id="main-header" data-height-onload="66">
-	<div class="container clearfix et_menu_container">
-		<div class="logo_container">
-			<span class="logo_helper"></span>
-			<a href="/">
-				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
-				Towdium
-			</a>
-		</div>
-		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
-			<nav id="top-menu-nav">
-				<ul id="top-menu" class="nav">
-					<li>
-						<a class="page-link" href="/">
-							Home
-						</a>
-					</li>
-					
-					
-					
-					
-					<li>
-						<a class="page-link" href="/About/">
-							About
-						</a>
-					</li>
-					
-					
-					
-					<li>
-						<a class="page-link" href="/Archives/">
-							Archive
-						</a>
-					</li>
-					
-					
-					
-					
-					
-					<li>
-						<a class="page-link" href="/Coding/">
-							代码
-						</a>
-					</li>
-					
-					
-					
-					<li>
-						<a class="page-link" href="/Daily/">
-							日常
-						</a>
-					</li>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<li>
-						<a class="page-link" href="/Knowledge/">
-							姿势
-						</a>
-					</li>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<!-- Social icons from Font Awesome, if enabled -->
-					<li>
-						<a class="page-link" href="">Find Me</a>
-						<ul class="children">
 
 
+<!-- Baidu Tongji -->
 
 
 
 
+<!-- Side Catalog -->
 
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ab70173edd5fd6" async="async"></script>
 
 
 
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
 
-<li>
-	<a href="https://github.com/Towdium" title="Follow on GitHub">
-		<i class="fa fa-fw fa-github"></i>
-	</a>
-</li>
+</body>
 
-
-
-<li>
-	<a href="https://weibo.com/u/5092127194" title="Follow on 微博">
-		<i class="fa fa-fw fa-weibo"></i>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://twitter.com/towdium" title="Follow on Twitter">
-		<i class="fa fa-fw fa-twitter"></i>
-	</a>
-</li>
-
-
-
-
-
-
-
-<li>
-	<a href="mailto:towdium@gmail.com" title="Email">
-		<i class="fa fa-fw fa-envelope"></i>
-	</a>
-</li>
-</ul>
-					</li>
-					
-				</ul>
-			</nav>
-
-			<div id="et_mobile_nav_menu">
-				<div class="mobile_nav closed">
-					<span class="select_page"></span>
-					<span class="mobile_menu_bar"></span>
-				</div>
-			</div>				
-		</div> <!-- #et-top-navigation -->
-	</div> <!-- .container -->
-	<div class="et_search_outer">
-		<div class="container et_search_form_container">
-			<form role="search" method="get" class="et-search-form" action="https://towdium.github.io">
-			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
-			<span class="et_close_search_field"></span>
-		</div>
-	</div>
-</header> <!-- #main-header -->
-
-    		<div id="et-main-area">
-      			<div class="home">
-  <article class="home-feature-image" >
-  <div style="background-image: url('/img/bg.jpg')"/>
-  <header style="background-image: url('https://source.unsplash.com/category/nature/2600x500')">
-    <p class="call-out-content"> The misfits. The rebels. The troublemakers. The round pegs in the square holes.
- </p>
-  </header>
-  </article>
-
-	<div class="posts">
-	
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/about-markdown-pandoc-latex/">
-		        关于 markdown， pandoc 和 LaTeX 的入门安利
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年04月13日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Daily/">Daily</a></a> <a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/record/">记录</a>, <a href="/tags/atom/">atom</a></a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <h1 id="section">前言</h1>
-
-<p>鉴于我的逗比室友还在码他的 matlab 代码，我已经无所事事到了一定境界，于是就只好开始码这篇新文章。对，你没有想错，现在的这段文字，是我在学校机房里写下的（笑）。今天要说的呢，是关于 atom 环境下关于 LaTex，markdown，以及 pandoc 写作的入门。对于一些人来说这可能有点陌生，但是别紧张，这本身是非常容易学习的，而且掌握这些内容之后，你的写作效率会有明显的提升。</p>
-
-<p>大部分人在用 word 的时候估计都会遇到这样的问题 “尼玛爸爸的图呢！” 或者是 “你倒是快给我缩进啊！喂！我让你动这边儿，没让...
-		    <p>
-		    <a class="text" href="/blog/about-markdown-pandoc-latex/">
-		      Continue Reading...
-		    </a>
-		    </p>
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/introduction-of-atom/">
-		        一发 Atom 的日常安利
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年04月5日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Daily/">Daily</a></a> <a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/fuck/">吐槽</a>, <a href="/tags/record/">记录</a>, <a href="/tags/atom/">atom</a></a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <p>说出来不怕笑话，这篇文章是我打的第二次。因为说好了 Atom 有良好的 Github 支持，不演示一下也说不过去，于是我就跑去研究了一下各种 Github 的兼容内容，然后，如你所想，忘了保存。不过这也没啥，一年不碰到几次忘记保存之类的蛋疼事件，都不好意思说经常工作（笑）。现在其实是期中考试周，你可能要问，期中考试不好好考，发什么贴？实话说期中考试这段时间可能要算得上是我开学以来最清闲的几天了，电气狗的生活苦不堪言。今天要说的呢，如你在标题里看到的，就是 Atom 啦！Atom 是一个 Github 出品的强大的多用途文本编辑器，由于内容很多，我也并不可能完全掌握，所以我就把我熟悉...
-		    <p>
-		    <a class="text" href="/blog/introduction-of-atom/">
-		      Continue Reading...
-		    </a>
-		    </p>
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/event-mode-in-java/">
-		        关于java事件处理模式的纠结日常
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年03月31日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Coding/">Coding</a></a> <a class="subtitle">  <i class="fa fa-tag"></i>: <a href="/tags/java/">Java</a></a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <h2 id="section">写在前边</h2>
-
-<blockquote>
-  <p>想到这个空间还算是挺私人的，所以以后可能写东西之前就会更一点无聊的日常，不然搞得一本正经的有点怪怪的（笑）。这次要说的呢是我目前手上mod的开发问题。目前的开发呢已经逼近尾声了，在仅有的几个计划功能开发完之后，大概会补一个1.7的版本，如果我真的能搞定1.7的材质以及nei的api的话（雾）。这个就是我最近失踪的原因啦，而且因为又开学了有可能还会失踪一段时间。就是这样啦。</p>
-</blockquote>
-
-<p>不出意外，上边这段文字是我一个月之前刚开学的时候写的，现在已经逼近期中考试了。平时...
-		    <p>
-		    <a class="text" href="/blog/event-mode-in-java/">
-		      Continue Reading...
-		    </a>
-		    </p>
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/usage-of-enum-in-java/">
-		        浅析 Java 中 enum 枚举与 C 的异同以及使用方法
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年01月30日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Coding/">Coding</a></a> <a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/java/">Java</a>, <a href="/tags/c/">C</a></a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <h2 id="enum---c--java">enum 的前世今生 —— C 与 Java</h2>
-
-<p>相信有不少小伙伴儿们刚开始接触 enum （枚举）的时候和笔者的想法是一样的：
-“我知道 Java 里边结构主要就是 类，方法，变量，这个枚举是个什么玩意？”
-这个问题现在解决可能还为时过早，我们不妨先看一段 C 的代码，
-来看看 enum 在 C 中是怎样的存在。没有 C 基础的小伙伴儿也别激动，
-我尽量把它写的简单一些，没有基础应该也能看懂，或者直接读下一节也不会影响整体内容的理解。
-注意，作为一个面向过程的语言，
-C 语言是没有类的，取而代之的是 structure （结...
-		    <p>
-		    <a class="text" href="/blog/usage-of-enum-in-java/">
-		      Continue Reading...
-		    </a>
-		    </p>
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/MIT-Q&A/">
-		        关于MIT许可的常见问题及解答
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年01月30日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/knowledge/">knowledge</a></a> <a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/mit/">MIT</a>, <a href="/tags/license/">License</a></a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <h2 id="section">前言</h2>
-
-<p>在百度上转了一圈，发现国内对于这些许可什么的说明并不充分，大多是集中于不同许可的异同，
-但是对于实际操作中的一些问题，解释的文章并不是很多。比如说我要去使用别人项目里的片段，
-我这边的项目的许可是不是有特殊的要求？GPL的传染性是很明显的，
-但是在实际操作中，不同许可的混合就会带来一些麻烦，我去谷歌了一篇
-<a href="http://www.tawesoft.co.uk/kb/article/mit-license-faq">MIT License FAQ</a> ,
-是由<a href="http://www.tawesof...
-		    <p>
-		    <a class="text" href="/blog/MIT-Q&A/">
-		      Continue Reading...
-		    </a>
-		    </p>
-		  
-		  </div>
-		</div>
-		
-	</div>
-
-	<div class="wp-pagenavi">
-	    <span class='pages'>第 1 页，共 2 页</span>
-
-	    
-
-	      
-	        <span class="current">1</span>
-	      
-	   
-	    
-	        
-	          <a class="page larger" href="/blog/page2">2</a>
-	        
-	    
-
-	    
-	    	<a class="nextpostslink" rel="next" href="/blog/page2" > » </a>
-	    
-
-	</div>
-</div>
-
-    		</div> <!-- #et-main-area -->
-		</div> <!-- #page-container -->
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_sharing_toolbox" align="center"></div>
-		
-<script src="/js/katex_init.js"></script>
-
-
-
-<footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text"><a href="https://yoursite.com">Towdium</a>
-</p>-->
-	Copyright &copy; 2016 <a href="https://yoursite.com">Towdium</a>
- All Rights Reserved. 
-	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
-</footer>
-
-
-    
-<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
-    <script type="text/javascript">
-        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
-        soundManager.url = '/plugins/soundmanager2.swf';
-        function play_mp3(flg, ids, mp3url, volume, loops)
-        {
-            //Check the file URL parameter value
-            var pieces = mp3url.split("|");
-            if (pieces.length > 1) {//We have got an .ogg file too
-                mp3file = pieces[0];
-                oggfile = pieces[1];
-                //set the file URL to be an array with the mp3 and ogg file
-                mp3url = new Array(mp3file, oggfile);
-            }
-
-            soundManager.createSound({
-                id: 'btnplay_' + ids,
-                volume: volume,
-                url: mp3url
-            });
-
-            if (flg == 'play') {
-                    soundManager.play('btnplay_' + ids, {
-                    onfinish: function() {
-                        if (loops == 'true') {
-                            loopSound('btnplay_' + ids);
-                        }
-                        else {
-                            document.getElementById('btnplay_' + ids).style.display = 'inline';
-                            document.getElementById('btnstop_' + ids).style.display = 'none';
-                        }
-                    }
-                });
-            }
-            else if (flg == 'stop') {
-    //soundManager.stop('btnplay_'+ids);
-                soundManager.pause('btnplay_' + ids);
-            }
-        }
-        function show_hide(flag, ids)
-        {
-            if (flag == 'play') {
-                document.getElementById('btnplay_' + ids).style.display = 'none';
-                document.getElementById('btnstop_' + ids).style.display = 'inline';
-            }
-            else if (flag == 'stop') {
-                document.getElementById('btnplay_' + ids).style.display = 'inline';
-                document.getElementById('btnstop_' + ids).style.display = 'none';
-            }
-        }
-        function loopSound(soundID)
-        {
-            window.setTimeout(function() {
-                soundManager.play(soundID, {onfinish: function() {
-                        loopSound(soundID);
-                    }});
-            }, 1);
-        }
-        function stop_all_tracks()
-        {
-            soundManager.stopAll();
-            var inputs = document.getElementsByTagName("input");
-            for (var i = 0; i < inputs.length; i++) {
-                if (inputs[i].id.indexOf("btnplay_") == 0) {
-                    inputs[i].style.display = 'inline';//Toggle the play button
-                }
-                if (inputs[i].id.indexOf("btnstop_") == 0) {
-                    inputs[i].style.display = 'none';//Hide the stop button
-                }
-            }
-        }
-    </script>
-    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
-<script type='text/javascript' src="/js/custom.js"></script>
-<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
-<script type='text/javascript' src="/js/waypoints.min.js"></script>
-<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
-    
-  </body>
 </html>

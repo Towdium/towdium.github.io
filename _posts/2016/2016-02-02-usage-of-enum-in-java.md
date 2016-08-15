@@ -3,7 +3,7 @@ layout: post
 title:  "浅析 Java 中 enum 枚举与 C 的异同以及使用方法"
 date:   2016-01-30
 author: Author
-category: coding
+catalog:    true
 tags: [java, c]
 ---
 

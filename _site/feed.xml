@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <description></description>
-    <link>https://towdium.github.io/</link>
-    <atom:link href="https://towdium.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 12 Jun 2016 19:36:13 +0800</pubDate>
-    <lastBuildDate>Sun, 12 Jun 2016 19:36:13 +0800</lastBuildDate>
+    <title>Towdium&#39;s here</title>
+    <description>关于前端与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 15 Aug 2016 14:10:40 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Aug 2016 14:10:40 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>关于 markdown， pandoc 和 LaTeX 的入门安利</title>
-        <description>&lt;h1 id=&quot;section&quot;&gt;前言&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;鉴于我的逗比室友还在码他的 matlab 代码，我已经无所事事到了一定境界，于是就只好开始码这篇新文章。对，你没有想错，现在的这段文字，是我在学校机房里写下的（笑）。今天要说的呢，是关于 atom 环境下关于 LaTex，markdown，以及 pandoc 写作的入门。对于一些人来说这可能有点陌生，但是别紧张，这本身是非常容易学习的，而且掌握这些内容之后，你的写作效率会有明显的提升。&lt;/p&gt;
 
@@ -19,7 +19,7 @@
 
 &lt;h2 id=&quot;markdown-&quot;&gt;markdown 的特性&lt;/h2&gt;
 
-&lt;h3 id=&quot;markdown--1&quot;&gt;关于 markdown 写作有多方便&lt;/h3&gt;
+&lt;h4 id=&quot;markdown--1&quot;&gt;关于 markdown 写作有多方便&lt;/h4&gt;
 
 &lt;p&gt;Markdown 是一种标记性语言，我们只需要标记每一段文本的格式，比如说要写标题的话，只需要写“&lt;code class=&quot;highlighter-rouge&quot;&gt;#这是一个标题&lt;/code&gt;”，或者是引用，只需要写 “&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; 这是一段引用&lt;/code&gt;”，效果就是这样的：&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;你可能会问了，我明明只写了一个箭号，怎么就会自己有排版呢？这个时候，就需要我们的渲染引擎发挥作用了。我们只需要把文本标记清楚，然后就可以让渲染引擎来完成接下来的工作。至于引用或者标题具体是什么样的格式，我们只需要一个样式表就可以搞定，而且在绝大部分情况下，渲染器都是有自带的样式表的，而且效果也是八九不离十，并不需要我们操心。我们所需要掌握的，只是 markdown 对于不同文本的标记格式，为了保证简洁性，它提供的格式并不多，但是几乎可以涵盖互联网上交流所需要的所有内容。具体的内容可以在 &lt;a href=&quot;http://www.appinn.com/markdown/&quot;&gt;这里&lt;/a&gt; 找到。对着参考文本，你对于 markdown 的语法应该很容易有一种大致的了解了。他的源文件并没有多美观，但是足够简单易用，并且排版轻松，最终的效果也并不差。如果需要的话，我所有博文的 markdown 原文可以在 &lt;a href=&quot;https://github.com/Towdium/towdium.github.io&quot;&gt;这里&lt;/a&gt; 找到。&lt;/p&gt;
 
-&lt;h3 id=&quot;markdown--2&quot;&gt;关于 markdown 的良好兼容性&lt;/h3&gt;
+&lt;h4 id=&quot;markdown--2&quot;&gt;关于 markdown 的良好兼容性&lt;/h4&gt;
 
 &lt;p&gt;我们平时写作业用 word，交作业用 pdf，大部分时间已经形成了共识，但是如果我要写一个网页，我是不是能传一个 pdf 来强行生成一波网页呢？答案当然是否定的。无论是 word，pdf，或者是 html，他们的文本格式都已经完全确定了，这样当然有好处，但是坏处也不言而喻：&lt;/p&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;markdown 的出现填补了这一领域的空缺。一方面，它的语法对于初学者而言也足够简单，另一方面，他对于程序读取也非常友好，同时，又保持了良好的排版效果。&lt;/p&gt;
 
-&lt;h3 id=&quot;markdown&quot;&gt;什么时候会用到 markdown&lt;/h3&gt;
+&lt;h4 id=&quot;markdown&quot;&gt;什么时候会用到 markdown&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;一些简单文档的写作，比如平时作业的 report，或者是简单程序的手册，这种情形下，对于排版没有什么特殊需求，好看就行，写作也力求简便，使用 markdown 会很有帮助；&lt;/li&gt;
@@ -51,21 +51,21 @@
 
 &lt;p&gt;说起来，markdown 本身只是一种标记的语法，至于怎么用，在不同情境下会有不同的方法下边我列举几种，仅供参考。&lt;/p&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;个人博客&lt;/h3&gt;
+&lt;h4 id=&quot;section-1&quot;&gt;个人博客&lt;/h4&gt;
 
 &lt;p&gt;我现在这个网站嘞，所有文章都是用 markdown 写的，源文件都可以在 这个网址 找到。To get started, 你只需要一个配置好了的 jekyll 环境（至于jekyll环境的配置我还并没有想好要不要开坑），然后运行一下，jekyll 就可以帮你把 markdown 的文本转换成排版好的网页啦。&lt;/p&gt;
 
-&lt;h3 id=&quot;essay--report&quot;&gt;日常的 essay 以及 report&lt;/h3&gt;
+&lt;h4 id=&quot;essay--report&quot;&gt;日常的 essay 以及 report&lt;/h4&gt;
 
 &lt;p&gt;如果你使用 atom （关于 atom 的介绍见 &lt;a href=&quot;http://towdium.github.io/blog/introduction-of-atom/&quot;&gt;这里&lt;/a&gt;）的话，搜索安装这个插件 “markdown-pdf”，然后执行 “markdown-pdf：convert” 就可以一键将 markdown 文本转化为 pdf 文件，如果你对于排版要求比较高，你还可以搜索 “markdown-themeable-pdf”， 这个插件支持更多的样式设置，同样的，也只需要一个命令就可以生成 pdf 文件。&lt;/p&gt;
 
 &lt;p&gt;另外，如果你需要 pdf 以外的文件格式，还有其他的工具来帮你转换。搜索插件 “pandoc-convert”就可以在 pdf, markdown, latex, docx, html 以及另外一大票文本格式中自由切换，当然 pandoc 的功能还不仅于此，更多的内容我们下边再说。&lt;/p&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;在线文档&lt;/h3&gt;
+&lt;h4 id=&quot;section-2&quot;&gt;在线文档&lt;/h4&gt;
 
 &lt;p&gt;Github 的网页版是支持 markdown 的在线排版的，随便一搜，大部分项目的 readme 都是 markdown 文件，我们可以很方便的直接浏览 github 上的 markdown 文本。&lt;/p&gt;
 
-&lt;h3 id=&quot;section-3&quot;&gt;另外，最重要的，本地预览&lt;/h3&gt;
+&lt;h4 id=&quot;section-3&quot;&gt;另外，最重要的，本地预览&lt;/h4&gt;
 
 &lt;p&gt;这个在 atom 环境下只需要安装 “markdown-preview”（似乎是程序自带的包），然后执行 “markdown-preview：toggle” 就可以直接预览了，如果需要更多内容，社区上还提供了使预览和编辑窗口同步滚动的插件 “markdown-scroll-sync”，使得预览兼容 LaTeX 公式的插件 “markdown-preview-plus”（如果你不知道 LaTeX 是什么那就算了）。&lt;/p&gt;
 
@@ -88,7 +88,7 @@
 
 &lt;p&gt;对，这两个东西我自己并不十分精通（尤其是玄学 LaTeX），所以我只说一下如何让这些东西在你的电脑上跑起来，在使用感受方面，我只能说 exciting，其余的无可奉告。&lt;/p&gt;
 
-&lt;h3 id=&quot;pandoc--atom-&quot;&gt;pandoc 在 atom 上的环境搭建&lt;/h3&gt;
+&lt;h4 id=&quot;pandoc--atom-&quot;&gt;pandoc 在 atom 上的环境搭建&lt;/h4&gt;
 
 &lt;p&gt;其实 pandoc 这个东西是一个独立的程序，他的主要功能就是实现不同文本格式之间的转换。但是那个官方版本的交互全都是 cmd 的操作，虽然强大，但是并不友好，atom 上的插件可以帮助你实现无比便捷的交互。&lt;/p&gt;
 
@@ -108,7 +108,7 @@
 
 &lt;p&gt;值得一提的是，通常情况下 pandoc 如果要输出 pdf 文件的话，需要电脑上有 LaTeX 的安装，但是 “pancod-convert” 似乎可以绕开 LaTeX。不出意外的话，不用通过 LaTeX，他也可以将文本转为 pdf 文件（不过如果要用 LaTeX 语法似乎还是要装？）。&lt;/p&gt;
 
-&lt;h3 id=&quot;latex--atom-&quot;&gt;LaTeX 在 atom 上的环境搭建&lt;/h3&gt;
+&lt;h4 id=&quot;latex--atom-&quot;&gt;LaTeX 在 atom 上的环境搭建&lt;/h4&gt;
 
 &lt;p&gt;LaTeX 这个东西和前边两个工具完全不是同一个重量级的，他是一个十分强大的学术论文排版工具。实话说 LaTeX 的语法其实十分晦涩，如果有兴趣的话请自行百度，我这里只说环境搭建，不对 LaTeX 进行介绍。这里插一句题外话，要找 LaTeX 模版， 上 &lt;a href=&quot;https://www.overleaf.com/&quot;&gt;Overleaf&lt;/a&gt;。回到正题，你需要安装下边这几个包，就可以比较轻松愉快的写 LaTeX 了：&lt;/p&gt;
 
@@ -147,15 +147,15 @@
 
 </description>
         <pubDate>Wed, 13 Apr 2016 14:54:00 +0800</pubDate>
-        <link>https://towdium.github.io/blog/about-markdown-pandoc-latex/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/about-markdown-pandoc-latex/</guid>
+        <link>/2016/04/13/about-markdown-pandoc-latex/</link>
+        <guid isPermaLink="true">/2016/04/13/about-markdown-pandoc-latex/</guid>
         
-        <category>record</category>
+        <category>markdown</category>
+        
+        <category>LaTeX</category>
         
         <category>atom</category>
         
-        
-        <category>daily</category>
         
       </item>
     
@@ -250,12 +250,10 @@
 
 </description>
         <pubDate>Tue, 05 Apr 2016 08:00:00 +0800</pubDate>
-        <link>https://towdium.github.io/blog/introduction-of-atom/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/introduction-of-atom/</guid>
+        <link>/daily/2016/04/05/introduction-of-atom/</link>
+        <guid isPermaLink="true">/daily/2016/04/05/introduction-of-atom/</guid>
         
-        <category>fuck</category>
-        
-        <category>record</category>
+        <category>daily</category>
         
         <category>atom</category>
         
@@ -467,13 +465,11 @@
 
 </description>
         <pubDate>Thu, 31 Mar 2016 00:00:00 +0800</pubDate>
-        <link>https://towdium.github.io/blog/event-mode-in-java/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/event-mode-in-java/</guid>
+        <link>/2016/03/31/event-mode-in-java/</link>
+        <guid isPermaLink="true">/2016/03/31/event-mode-in-java/</guid>
         
         <category>java</category>
         
-        
-        <category>coding</category>
         
       </item>
     
@@ -905,15 +901,13 @@ C 语言中的 enum 与 structure 具有相当高的相似性。
 &lt;a href=&quot;http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html&quot;&gt;Java enum的用法详解 by rhino&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 +0800</pubDate>
-        <link>https://towdium.github.io/blog/usage-of-enum-in-java/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/usage-of-enum-in-java/</guid>
+        <link>/2016/01/30/usage-of-enum-in-java/</link>
+        <guid isPermaLink="true">/2016/01/30/usage-of-enum-in-java/</guid>
         
         <category>java</category>
         
         <category>c</category>
         
-        
-        <category>coding</category>
         
       </item>
     
@@ -1049,15 +1043,13 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 或者你也可以关注Tawsoft的推特 @tawsoft 。&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 +0800</pubDate>
-        <link>https://towdium.github.io/blog/MIT-Q&A/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/MIT-Q&A/</guid>
+        <link>/2016/01/30/MIT-Q&A/</link>
+        <guid isPermaLink="true">/2016/01/30/MIT-Q&A/</guid>
         
         <category>mit</category>
         
         <category>license</category>
         
-        
-        <category>knowledge</category>
         
       </item>
     
@@ -1099,17 +1091,13 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 &lt;p&gt;祝好。&lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Jan 2016 08:00:00 +0800</pubDate>
-        <link>https://towdium.github.io/blog/hello-blog/</link>
-        <guid isPermaLink="true">https://towdium.github.io/blog/hello-blog/</guid>
+        <link>/2016/01/29/hello-blog/</link>
+        <guid isPermaLink="true">/2016/01/29/hello-blog/</guid>
         
-        <category>fuck</category>
-        
-        <category>record</category>
+        <category>daily</category>
         
         <category>jekyll</category>
         
-        
-        <category>daily</category>
         
       </item>
     
