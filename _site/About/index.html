@@ -151,7 +151,7 @@
                 <div class="site-heading">
                     <h1>About</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">Hi there.</span>
+                    <span class="subheading">Hi there</span>
                 </div>
             </div>
         </div>
@@ -173,7 +173,9 @@
                 col-xs-12
                 postlist-container
             ">
-    			<!-- Language Selector -->
+    			<br>
+
+<!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
@@ -201,7 +203,6 @@
 
 </div>
 
-
 <!-- English Version -->
 <div class="en post-container">
   <p>Hi, here is Towdium, a guy from Nanjing. I'm studing in <a href="http://www.xjtlu.edu.cn">Xi'an Jiaotong Liverpool University</a>, studing EEE, year 2.
@@ -221,7 +222,6 @@
   <p>No intrest in food and travelling.</p>
 
   <p>Best regards,<br> winter 2016</p>
-
 </div>
 
 <!-- Handle Language Change -->
@@ -267,31 +267,38 @@
 
 
 
-
-
-
-<!-- disqus 评论框 start -->
+<!-- 多说评论框 start -->
 <div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
+    <div class="ds-thread"
+    
+        data-thread-key="towdium/about"
+    
 
-    </div>
+    data-title="About"
+    data-url="/about/"></div>
 </div>
-<!-- disqus 评论框 end -->
+<!-- 多说评论框 end -->
 
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "Towdium";
-    var disqus_identifier = "Towdium//about/";
-    var disqus_url = "/about/";
+    // dynamic User hacking by Hux
+    var _user = 'towdium';
 
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
-<!-- disqus 公共JS代码 end -->
+<!-- 多说公共JS代码 end -->
+
+
+
 
 
     		</div>
@@ -568,7 +575,7 @@
 
 
 <!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
+<img src="/img/site/icon.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>

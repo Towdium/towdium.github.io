@@ -27,9 +27,9 @@ int main(){
     * 同时，myLeverState 受前边的内容限制，
     * 需要表示 LeverState，且内容必须是 ON 或 OFF 之一
     */
-	enum LeverState{ OFF, ON } myLeverState;
+    enum LeverState{ OFF, ON } myLeverState;
     myLeverState = ON;  /* 将变量赋值为 ON */
-	printf("%d", myLeverState);
+    printf("%d", myLeverState);
     /* 输出结果：1 */
     /* C语言把 ON 和 OFF 翻译成了整数，按照顺序，OFF为0，ON为1 */
 }
