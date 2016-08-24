@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "LaTeX 中的排版细节——中文渲染与图文混排"
-date: "2016-04-13 14:54"
+date: "2016-08-16"
 author: Author
 catalog: true
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "写在主题更新后"
-date: "2016-04-13 14:54"
+date: "2016-08-15"
 author: Author
 catalog: false
 tags:
