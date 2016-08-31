@@ -5,7 +5,7 @@ header-img: https://source.unsplash.com/category/nature/2600x500
 email: towdium@gmail.com
 description: "这里是 Towdium 的个人博客，分享我的一些学习记录，以及日常的碎碎念"
 keyword: "Towdium"
-#url: "http://huangxuan.me"              # your host, for absolute URL
+url: "http://towdium.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
