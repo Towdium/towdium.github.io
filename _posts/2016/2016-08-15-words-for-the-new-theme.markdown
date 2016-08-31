@@ -5,7 +5,7 @@ date: "2016-08-15"
 author: Author
 catalog: false
 tags:
-  - daily
+  - 日常
   - jekyll
 ---
 

@@ -4,7 +4,7 @@ title: Hello Blog
 date: 2016-01-29T00:00:00.000Z
 author: Author
 tags:
-  - daily
+  - 日常
   - jekyll
 ---
 

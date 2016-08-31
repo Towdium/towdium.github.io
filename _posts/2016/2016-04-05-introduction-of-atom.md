@@ -5,7 +5,7 @@ date: 2016-04-05T00:00:00.000Z
 author: Author
 catalog:    true
 tags:
-  - daily
+  - 日常
   - atom
 categories:
   - daily
