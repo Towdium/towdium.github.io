@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "关于散度，旋度和拉普拉斯算子"
+title: "散度，旋度和拉普拉斯算子"
 date: "2016-09-30 00:21"
 author: Author
 catalog: true
@@ -19,7 +19,7 @@ tags:
 
 $$\mathbf{D} = \epsilon\mathbf{E}$$
 
-这个式子里 $D$ 就是所谓的电通密度，$ε$ 是介电常数。式子本身只是一个换算关系，重点在于他把电场强度这个介质有关的量转换成了介质无关的电通密度，相似的还有另一个 $\mathbf{B} = \mu\mathbf{H}$。然后我们把麦克斯韦方程组里的这一条拿出来：
+这个式子里 $D$ 就是所谓的电通密度，$ε$ 是介电常数。式子本身只是一个换算关系，重点在于他把电场强度这个介质有关的量转换成了介质无关的电通密度，相似的还有另一个 $\mathbf{B} = \mu\mathbf{H}$。然后我们把麦克斯韦方程组里的高斯定理条拿出来：
 
 $$\oiint_S\textbf{D}\cdot d\textbf{S} = q_0$$
 
@@ -27,16 +27,16 @@ $$\oiint_S\textbf{D}\cdot d\textbf{S} = q_0$$
 
 $$
 \begin{align}
-\lim_{V\to 0}\frac{\mathbf{D}\cdot d\mathbf{S}}{V} &= \frac{q_0}{V} \tag{1a}\\
+\lim_{V\to 0}\frac{\mathbf{D}\cdot d\mathbf{S}}{V} &= \lim_{V\to 0}\frac{q_0}{V} \tag{1a}\\
 \lim_{V\to 0}\frac{\mathbf{D}\cdot d\mathbf{S}}{V} &= \rho_0\label{1}\tag{1b}
 \end{align}
 $$
 
-到这一步先别急，你在麦克斯韦方程微分表达式里边一定看过这个：
+到这一步先别急，你可能还记得高斯定理的微分式：
 
 $$\nabla\cdot\mathbf{D} = \rho_0\tag{2}\label{2}$$
 
-这时候你对比一下 $(\ref{1})$ 和 $(\ref{2})$，等式左边其实是一致的，所以结论也显而易见：
+这时候你对比一下 $(\ref{1})$ 和 $(\ref{2})$，等式右边其实是一致的，所以结论也显而易见：
 
 $$\nabla\cdot\mathbf{D} = \lim_{V\to 0}\frac{\mathbf{D}\cdot d\mathbf{S}}{V}$$
 
@@ -44,7 +44,48 @@ $$\nabla\cdot\mathbf{D} = \lim_{V\to 0}\frac{\mathbf{D}\cdot d\mathbf{S}}{V}$$
 
 #### 宏观角度的理解
 
-作为一个微分量。他的宏观意义其实并不像微观意义那么重要，但是在知乎上这一部分是比较着重被提到的，因为这一部分比较好理解吧。它在符号上与 $\Phi D$ 一致，数值上等于 $Phi D / V$, 如果你对 $\Phi D$ 有不错的了解，这一部分其实并没有什么难度。你可以把它理解成场源的密度（见 $(\ref{2})$），但是这样做意义不大，因为不是所有的微分量都能有具体的物理意义。
+作为一个微分量。他的宏观意义其实并不像微观意义那么重要，但是在知乎上这一部分是比较着重被提到的（或者很容易被这样误解），因为这一部分比较好理解吧。它在符号上与 $\Phi D$ 一致，数值上等于 $\Phi D / V$, 如果你对 $\Phi D$ 有不错的了解，这一部分其实并没有什么难度。你可以把它理解成场源的密度（见 $(\ref{2})$），但是这样做意义不大，因为不是所有的微分量都能有具体的物理意义。
+
+## 旋度
+
+#### 微分解释
+
+旋度其实和散度的定义是非常相似的。散度是矢量场的面积分（通量）的体微分，旋度作为一个向量，它与面的法向量的点积则是矢量场的环路积分（环量）的面微分。麦克斯韦方程组中安培定律的积分式这样写道：
+
+$$\oint_L\mathbf{B} d\mathbf{l} = \mu_0 I + \mu_0\epsilon_0\frac{d\Phi_\mathbf{E}}{dt}$$
+
+我们对他两侧取面积的微分：
+
+$$\lim_{S\to 0}\frac{\oint_L\mathbf{B} d\mathbf{l}}{S} = \lim_{S\to 0}(\mu_0\frac{I}{S} + \mu_0\epsilon_0\frac{d\Phi_\mathbf{E}}{Sdt})\tag{3}\label{3}$$
+
+根据定义，我们有：
+
+$$\mathbf{J} = \frac{I}{S} \cdot \mathbf{n}\tag{4}\label{4}$$
+$$\Phi_\mathbf{E} = \int_S \mathbf{E}\cdot d\mathbf{A}\tag{5}\label{5}$$
+
+其中 $S$ 为面积，$\mathbf{n}$ 为法向量。在极限情况下，$(\ref{5})$ 可以化简成下式：
+
+$$\Phi_\mathbf{E} = S(\mathbf{E} \cdot \mathbf{n})\tag{6}\label{6}$$
+
+将 $(\ref{4})$ 和 $(\ref{6})$ 代入 $(\ref{3})$，可得：
+
+$$\lim_{S\to 0}\frac{\oint_L\mathbf{B} d\mathbf{l}}{S} = \mu_0\mathbf{J}\cdot\mathbf{n} + \mu_0\epsilon_0\frac{\partial\mathbf{E}\cdot\mathbf{n}}{\partial t}$$
+
+安培定则的微分表达式如下：
+
+$$\nabla\times\mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t}$$
+
+通过对比，我们可以清楚的看出这个结论：
+
+$$\nabla\times\mathbf{B} \cdot \mathbf{n} = \lim_{S\to 0}\frac{\oint_L\mathbf{B} d\mathbf{l}}{S}$$
+
+旋度区别于散度的一点就是它是一个向量。如你所见，我们之前的推导是基于一个任意的面（和包围它的环路）进行的，也就是说，只要是某一点附近的任何一个面，散度的结论都对它有效。所以很重要的一点是，旋度和散度一样，是一个点的微分特性，不依赖于任何一个特定的面。
+
+#### 宏观解释
+
+这个地方我只能说，旋度几乎不能从宏观角度来看。举个例子：如果我在空间里随便画一个环路，甚至不必要使他全部在一个平面内，那么他围成的面的法向量是什么呢？这个问题会搞得很复杂而且没有意义。我们之前的推导有一些步骤本来就只能在微分的环境下进行，所以它注定也只能是一个场之中点的性质。
+
+我觉得我之前长期被一个思想误导了：“散度和旋度是描述场的两个尺度”，实际上你并不能说 “这个场的散度是多少，旋度是多少”，因为散度和旋度本身就是点的特性，而要想描述一个场，则要通过散度函数和旋度函数来描述这个场里任一点的散度和旋度。我觉得这一点很重要，对于一个场，散度和旋度并不是一个数值，而是一个函数。
 
 ## 附言
 
