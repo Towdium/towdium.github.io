@@ -64,18 +64,20 @@ $$\mathbf{E} = \frac{kQ}{r^2}\cdot\mathbf{i}$$
 
 其中 r 表示原点到任意一点 P 的距离，$\mathbf{i}$ 表示 $\vec{OP}$ 方向的单位向量，转化为坐标表示：
 
-$$\begin{align}
+$$
+\begin{split}
 \mathbf{E} &= \frac{kQ}{x^2+y^2+z^2}\cdot\frac{\vec{OP}}{|\vec{OP}|} \\ &= \frac{kQ}{(x^2+y^2+z^2)^{3/2}}\cdot(x,y,z) \\
 &= (\frac{xkQ}{(x^2+y^2+z^2)^{3/2}}, \frac{ykQ}{(x^2+y^2+z^2)^{3/2}},\frac{zkQ}{(x^2+y^2+z^2)^{3/2}})
-\end{align}$$
+\end{split}
+$$
 
 于是：
 
-$$\begin{align}
+$$\begin{split}
 \nabla\cdot\mathbf{E}  = & \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \\
 =& \frac{kQ(x^2+y^2+z^2)^{3/2}-xkQ\cdot\frac{3}{2}\sqrt{x^2+y^2+z^2}\cdot 2x}{(x^2+y^2+z^2)^3} + \\ &\frac{kQ(x^2+y^2+z^2)^{3/2}-ykQ\cdot\frac{3}{2}\sqrt{x^2+y^2+z^2}\cdot 2y}{(x^2+y^2+z^2)^3} + \\ &\frac{kQ(x^2+y^2+z^2)^{3/2}-zkQ\cdot\frac{3}{2}\sqrt{x^2+y^2+z^2}\cdot 2z}{(x^2+y^2+z^2)^3} \\
 =& \frac{0}{(x^2+y^2+z^2)^3}
-\end{align}$$
+\end{split}$$
 
 当 x，y，z 不同时等于0时，$\nabla\cdot\mathbf{E} = 0$，当 x，y，z 全等于零时，这个式子并不足于描述这个情况。如果用微分推的话，原点的散度应该等于正无穷。这个可能和大家对日常概念的感知有所出入，但是我们换个角度来说，既然我们之前已经说了，电场的散度等于电荷密度，而这里用的又是点电荷，也就意味着在这一点电荷的密度是无穷大，而除此之外的点密度都是零，这就和我们的理解一致了。
 
@@ -130,4 +132,4 @@ $$\Delta f = \nabla^2 f = \nabla \cdot \nabla f$$
 
 ## 附言
 
-这一篇内容我其实一直是在通过结论推过程。毕竟这种算子的存在只是来自于定义，光说定义可能并不好理解。所以不如从大家比较熟悉的两端出发，逐渐合拢，这样可能更易懂些。内容我还没写完，缓更。另外我其实预料到这些内容可能我们很快就会重新学到，不过这也无所谓啦，正好当作学习笔记了（笑）。
+这一篇内容我其实一直是在通过结论推过程。毕竟这种算子的存在只是来自于定义，光说定义可能并不好理解。所以不如从大家比较熟悉的两端出发，逐渐合拢，这样可能更易懂些。内容我还没写完，缓更。另外我其实预料到这些内容可能我们很快就会重新学到，不过这也无所谓啦，正好当作学习笔记了（笑）
