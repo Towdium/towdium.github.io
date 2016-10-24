@@ -137,7 +137,9 @@ $$\mathbf{F} = (f_x, f_y, f_z)$$
 然后我们将 D 和 F 分别进行一些简单的操作，就得到以下的关系：
 
 $$\mathbf{D}\circ\mathbf{F} = \nabla\mathbf{F}$$
+
 $$\mathbf{D}\times\mathbf{F} = \nabla\times\mathbf{F}$$
+
 $$\mathbf{D}\cdot\mathbf{F} = \nabla\cdot\mathbf{F}$$
 
 这里的小圆圈表示逐项相乘，也就是 MATLAB 里边的 `.*` 算符。不用谢我，数学就是这么简单（放屁）。
