@@ -134,7 +134,7 @@ $$\nabla = (\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\par
 
 $$\text{梯度} = \nabla F$$
 
-对于矢量场 $$\mathbf{F} = (f_x, f_y, f_z)$$，我们有：
+对于矢量场 $\mathbf{F} = (f_x, f_y, f_z)$，我们有：
 
 $$\text{散度} = \nabla\cdot\mathbf{F}$$
 
