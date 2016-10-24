@@ -126,23 +126,21 @@ $$\nabla\times\mathbf{B} \cdot \mathbf{n} = \lim_{S\to 0}\frac{\oint_L\mathbf{B}
 
 #### 梯度，散度和旋度的横向比较
 
-这一段里边出现的东西可能是相当抽象的，但是我打赌你会受惊于数学之美。我们学习导数的时候，会有这样一个东西 $\partial / \partial x$, 用他乘上 F，就得到了 F 的导数。相应的，我们在研究向量场的时候也给出这样一个量，姑且叫他向量 D 好了（不是电场那个 D 啦！）：
+这一段里边出现的东西可能是相当抽象的，但是我打赌你会受惊于数学之美。我们学习导数的时候，会有这样一个东西 $\partial / \partial x$, 用他乘上 F，就得到了 F 的导数。相应的，我们在研究向量场的时候也给出这样一个量，姑且叫他向量 $\nabla$ 好了：
 
-$$\mathbf{D} = (\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z})$$
+$$\nabla = (\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z})$$
 
-然后我们的场 F, 注意这里的三个坐标都是函数：
+对于标量场 F，我们有：
 
-$$\mathbf{F} = (f_x, f_y, f_z)$$
+$$\text{梯度} = \nabla F$$
 
-然后我们将 D 和 F 分别进行一些简单的操作，就得到以下的关系：
+对于矢量场 $$\mathbf{F} = (f_x, f_y, f_z)$$，我们有：
 
-$$\mathbf{D}\circ\mathbf{F} = \nabla\mathbf{F}$$
+$$\text{散度} = \nabla\times\mathbf{F}$$
 
-$$\mathbf{D}\times\mathbf{F} = \nabla\times\mathbf{F}$$
+$$\text{旋度} = \nabla\cdot\mathbf{F}$$
 
-$$\mathbf{D}\cdot\mathbf{F} = \nabla\cdot\mathbf{F}$$
-
-这里的小圆圈表示逐项相乘，也就是 MATLAB 里边的 `.*` 算符。不用谢我，数学就是这么简单（放屁）。
+不用谢我，数学就是这么简单（放屁）。
 
 
 #### 拉普拉斯算子
