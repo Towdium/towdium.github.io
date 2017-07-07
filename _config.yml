@@ -84,5 +84,9 @@ friends: [
     {
         title: "Shell Cottage",
         href: "http://shellcottage.me/"
+    },{
+        title: "酒石酸菌",
+        href: "https://tartaricacid.github.io/"
     }
+
 ]
