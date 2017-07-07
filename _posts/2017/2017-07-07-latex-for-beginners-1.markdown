@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 智障的 LaTeX 入门教程
+title: 智障的 LaTeX 入门教程（一）
 date: '2017-07-07 21:50'
 author: Author
 catalog: true
@@ -46,6 +46,6 @@ Atom 内建了拼写检查，但是说实在话，能用，但是有点智障。
 [2]: https://www.zhihu.com/question/19954023
 [3]: http://towdium.github.io/2016/04/05/introduction-of-atom/
 [4]: https://www.tug.org/texlive/
-[5]: /img/posts/latex-for-beginners_1.png
+[5]: /img/posts/latex-for-beginners-1_1.png
 [6]: https://www.overleaf.com/
-[7]: /img/posts/latex-for-beginners_2.png
+[7]: /img/posts/latex-for-beginners-1_2.png
