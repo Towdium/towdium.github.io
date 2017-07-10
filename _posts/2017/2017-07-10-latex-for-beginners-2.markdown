@@ -1,7 +1,7 @@
 ---
-layout: "post"
-title: "智障的 LaTeX 入门教程（二）"
-date: "2017-07-07 22:59"
+layout: post
+title: 智障的 LaTeX 入门教程（二）
+date: '2017-07-10 17:32'
 author: Author
 catalog: true
 tags:
@@ -86,7 +86,10 @@ $$\oiint \bm{E}\cdot d\bm{s}=\frac{Q}{\epsilon_0}$$
 
 \section{图片插入}
 
-通过 \verb+graphicx+ 这个包，我们可以非常轻松的插入图片。图\ref{fig}是一张示例图片，同样使用了内文引用。当然插图的方法还有很多，来实现不同的效果，我们这里只讲基础。这里的图片是浮动的，在没有位置的时候，他可能会浮动到其他页面上，这样可以防止文档里出现大量的空白。
+通过 \verb+graphicx+ 这个包，我们可以非常轻松的插入图片。
+图\ref{fig}是一张示例图片，同样使用了内文引用。当然插图的方法还有很多，
+来实现不同的效果，我们这里只讲基础。这里的图片是浮动的，在没有位置的时候，
+他可能会浮动到其他页面上，这样可以防止文档里出现大量的空白。
 
 \begin{figure}[!ht]
   \centering
@@ -97,9 +100,14 @@ $$\oiint \bm{E}\cdot d\bm{s}=\frac{Q}{\epsilon_0}$$
 
 \section{代码插入}
 
-这里提供了一个最小化的代码插入方式。效果给出在代码\ref{code}中。包 \verb+listings+ 提供了无比强大的代码高亮支持，只不过我这里没有进行相关的设置，所以内容均是黑白的。有机会的话我会在后文中提供一些思路。
+这里提供了一个最小化的代码插入方式。效果给出在代码\ref{code}中。
+包 \verb+listings+ 提供了无比强大的代码高亮支持，
+只不过我这里没有进行相关的设置，所以内容均是黑白的。
+有机会的话我会在后文中提供一些思路。
 
-\begin{lstlisting}[language=python, frame=single, caption=一段示例代码, label=code, captionpos=b, basicstyle=\footnotesize]
+\begin{lstlisting}[language=python, frame=single,
+caption=一段示例代码, label=code, captionpos=b,
+basicstyle=\footnotesize]
 usage = "Run the script: ./geolocate.py IPAddress"
 if len(sys.argv)!=2:
     print(usage)
@@ -108,7 +116,9 @@ if len(sys.argv)!=2:
 
 \section{表格插入}
 
-老实说表格在 \LaTeX{} 中的使用比较反人类，尤其当你想要合并单元格的时候。不过这也是没有办法，任何一个富文本语言对表格这种东西基本上都相性不合。表格\ref{tab}提供了一个较为简陋的表格实现。
+老实说表格在 \LaTeX{} 中的使用比较反人类，尤其当你想要合并单元格的时候。
+不过这也是没有办法，任何一个富文本语言对表格这种东西基本上都相性不合。
+表格\ref{tab}提供了一个较为简陋的表格实现。
 
 \begin{table}[!h]
   \centering
@@ -130,7 +140,8 @@ if len(sys.argv)!=2:
   \item 第一条
   \item 第二条
 \end{enumerate}
-在枚举环境中，他也会完全帮你搞定编号排序的问题。当然，你也可以使用没有编号的版本：
+在枚举环境中，他也会完全帮你搞定编号排序的问题。
+当然，你也可以使用没有编号的版本：
 \begin{itemize}
   \itemsep-0.5em %缩小间距
   \item 第一条
@@ -145,7 +156,7 @@ if len(sys.argv)!=2:
 当然这个文档在你的电脑上很可能不能成功编译。有下边几个原因：
 
 - 你没有使用 XeLaTeX 引擎：看前一章我们说的引擎配置。
-- 你没有图片 pic.pdf:我已经上传到了 #TODO ，下载并放置到源文件的同一文件夹，并命名为 `pic.pdf` 即可。当然你如果想用自己的图片也没有问题，`\includegraphics[width=0.4\textwidth]{pic}`中的 `pic` 就是插入图片的路径。我个人建议 pdf 图片，他长期以来发挥稳定，其它格式有时则会翻车。你可能还要尝试带后缀名和不带后缀名的写法。
+- 你没有图片 `pic.pdf`：我已经上传到了 [Github 仓库][5] ，下载并放置到源文件的同一文件夹，并命名为 `pic.pdf` 即可。当然你如果想用自己的图片也没有问题，`\includegraphics[width=0.4\textwidth]{pic}`中的 `pic` 就是插入图片的路径。我个人建议 pdf 图片，他长期以来发挥稳定，其它格式有时则会翻车。你可能还要尝试带后缀名和不带后缀名的写法。
 
 对于新手而言，阅读 LaTeX 的错误日志是相当痛苦的事情。我刚开始学的时候，基本上每次编译都是几十个警告，只能硬着头皮写，当你逐渐熟悉之后，你才能明白这些警告在说什么。当然最好的方法是找一些模板或者非常短的文章来编译，从一开始就不要允许大规模警告的出现。
 
@@ -156,6 +167,8 @@ if len(sys.argv)!=2:
 关于内文应用，他的逻辑是在某一个部件的内部定义 `\label{foo}`, 然后在文档的任何地方引用只需要 `\ref{foo}` 即可。因为 LaTeX 会编译多次，所以即使先引用后定义也是完全没有问题的。
 
 关于中文的显示，这里我用的是 CTeX 宏包进行的配置。不得不说确实非常好用，配置简单，发挥稳定。你只需要在第一行使用 `ctexart` 即可。
+
+关于段落和分词，LaTeX 以两个换行作为段落分割，一个换行没有任何作用，只是方便代码排版。如果要强制换行，可以使用 `\\`。类似地，LaTeX 也会自行处理单词间的间距。无论使用多少个空格，LaTeX 只会把它当作单词分割，输出的结果都是一样的。
 
 如果你之前习惯使用 markdown 的话，可能会难以接受 LaTeX 代码的复杂度。本质上来说，markdown 代码只含有文本内容，而没有特定格式，但是 LaTeX 是完全不同的，他的强大之处在于你可以自定义任何的一个格式，对于一些常用的代码块，你完全可以自定义成函数，这样就可以大大减小冗余文本的数量。现在你大概可以知道，LaTeX 和 markdown 完全不是一个数量级的产品。
 
@@ -169,7 +182,7 @@ if len(sys.argv)!=2:
 
 ## 模板
 
-在用了这么久 LaTeX 之后，老实说我没有一次是从零开始码起的，绝大部分情况下，都是基于模板进行工作。我们上次说到的 [overleaf][4] 就是一个很好的模板下载网站，你可以搞到成吨的模板。如果是作业的话，学校一般会提供 LaTeX 模板来统一画风，所以直接那它来改就好。这里再贴一个我自改自用的模板，他其实已经深度魔改了，带有一百多行的导言，包括各种函数定义以及大量高亮语法的定义，另外还有一个自改的 iee 引用格式，至于引用的部分，我们会在下次说到。这个模板我发到 这里 TODO，有需要的可以自行下载使用。
+在用了这么久 LaTeX 之后，老实说我没有一次是从零开始码起的，绝大部分情况下，都是基于模板进行工作。我们上次说到的 [overleaf][4] 就是一个很好的模板下载网站，你可以搞到成吨的模板。如果是作业的话，学校一般会提供 LaTeX 模板来统一画风，所以直接那它来改就好。这里再贴一个我自改自用的模板，他其实已经深度魔改了，带有一百多行的导言，包括各种函数定义以及大量高亮语法的定义，另外还有一个自改的 iee 引用格式，至于引用的部分，我们会在下次说到。这个模板我也发到 [Github 仓库][6] 了，有需要的可以自行下载使用。
 
 ## 结
 
@@ -180,3 +193,5 @@ if len(sys.argv)!=2:
 [2]: http://towdium.github.io/2016/08/16/about-layout-in-latex/
 [3]: /img/posts/latex-for-beginners-2_2.png
 [4]: https://www.overleaf.com/
+[5]: https://github.com/Towdium/towdium.github.io/blob/master/share/latex-for-beginners_pic.pdf
+[6]: https://github.com/Towdium/towdium.github.io/blob/master/share/latex-for-beginners_template.zip
