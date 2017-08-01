@@ -62,7 +62,7 @@ disqus_username: towdium
 #ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-73095900-1'            # Format: UA-xxxxxx-xx
-ga_domain: towdium.github.io
+ga_domain: www.towdium.me
 
 
 
