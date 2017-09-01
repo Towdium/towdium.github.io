@@ -109,6 +109,6 @@ Atom 内建了拼写检查，但是说实在话，能用，但是有点智障。
 [6]: https://www.overleaf.com/
 [7]: /img/posts/latex-for-beginners-1_2.png
 [8]: /img/posts/latex-for-beginners-1_3.png
-[9]: www.towdium.me/2017/07/10/latex-for-beginners-2/
-[10]: www.towdium.me/2017/08/06/latex-for-beginners-3/
-[11]: www.towdium.me/2017/09/02/latex-for-beginners-4/
+[9]: http://www.towdium.me/2017/07/10/latex-for-beginners-2/
+[10]: http://www.towdium.me/2017/08/06/latex-for-beginners-3/
+[11]: http://www.towdium.me/2017/09/02/latex-for-beginners-4/

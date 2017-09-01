@@ -138,5 +138,5 @@ LaTeX 这个东西和前边两个工具完全不是同一个重量级的，他�
 [5]: http://www.appinn.com/markdown/
 [6]: https://github.com/Towdium/towdium.github.io
 [7]: http://www.williamlong.info/archives/4319.html
-[8]: www.towdium.me/introduction-of-atom/
-[9]: www.towdium.me/2017/07/07/latex-for-beginners-1/
+[8]: http://www.towdium.me/introduction-of-atom/
+[9]: http://www.towdium.me/2017/07/07/latex-for-beginners-1/
