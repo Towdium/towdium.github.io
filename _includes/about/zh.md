@@ -5,7 +5,7 @@
 
 语言常用 Java，熟悉 C++ 和 Python。
 
-技能树歪得要命，做过 Minecraft 模组，工业软件（Qt+OpenGL），深度学习（PyTorch），Docker，FGPA（Verilog），Arduino。常驻过 Linux，但是 Shell 不会多少。实在需要的话也可以做 Android，强电，模电，控制系统。另外还附赠 LaTeX，Photoshop，Premiere，After Effects，Inkscape，GIMP。老实说作为美工倒是意外的挺熟练。
+技能树歪得要命，做过 Minecraft 模组，​工业软件（Qt+OpenGL），​深度学习（PyTorch），​Docker，​FGPA（Verilog），​Arduino。​常驻过 Linux，但是 Shell 不会多少。实在需要的话也可以做 Android，强电，模电，控制系统。另外还附赠 LaTeX，​Photoshop，​Premiere，​After Effects，​Inkscape，​GIMP。​老实说作为美工倒是意外的挺熟练。
 
 如你所见，学的计算机，但不是科班。算法和数据结构还算可以，懂一点操作系统，数据库原理，AI。除此之外，网络和前端认识几乎为零，看得懂，有时会用，但是讲不清。值得一提的就是写过的代码量比较大，这一点有兴趣的话可以翻翻我的 Github。
 
