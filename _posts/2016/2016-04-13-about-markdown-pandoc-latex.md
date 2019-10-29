@@ -5,9 +5,9 @@ date: "2016-04-13 14:54"
 author: Author
 catalog:    true
 tags:
-  - markdown
+  - Markdown
   - LaTeX
-  - atom
+  - Atom
 ---
 
 ## 前言

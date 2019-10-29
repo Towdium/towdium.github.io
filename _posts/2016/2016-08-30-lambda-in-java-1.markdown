@@ -5,7 +5,7 @@ date: "2016-08-30 00:22"
 author: Author
 catalog: true
 tags:
-  - java
+  - Java
 ---
 
 今天来更一更最近对java的学习内容。主要是关于java的函数式编程，文中会说到lambda表达式的用法，并提供一些事例和实际问题中的使用技巧。

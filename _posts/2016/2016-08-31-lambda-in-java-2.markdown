@@ -5,7 +5,7 @@ date: "2016-08-31 15:28"
 author: Author
 catalog: true
 tags:
-  - java
+  - Java
 ---
 
 ## lambda 语法

@@ -4,7 +4,7 @@ title:  "关于java事件处理模式的纠结日常"
 date:   2016-03-31
 author: Author
 catalog:    true
-tags: [java]
+tags: [Java]
 ---
 
 ## 写在前边
