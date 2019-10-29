@@ -62,7 +62,7 @@ Github 的网页版是支持 markdown 的在线排版的，随便一搜，大部
 
 这个在 atom 环境下只需要安装 “markdown-preview”（似乎是程序自带的包），然后执行 “markdown-preview：toggle” 就可以直接预览了，如果需要更多内容，社区上还提供了使预览和编辑窗口同步滚动的插件 “markdown-scroll-sync”，使得预览兼容 LaTeX 公式的插件 “markdown-preview-plus”（如果你不知道 LaTeX 是什么那就算了）。
 
-![markdown效果](/img/posts/about-markdown-pandoc-latex_1.png)
+![markdown效果](/img/posts/2016/about-markdown-pandoc-latex_1.png)
 
 效果大概就是这样的，左边是文本，右边是预览。储神对于默认字体已经吐槽过了“为什么左边的文字看起来比右边好看？”对于这种问题，我只能说，无可奉告（笑）。另外，如果你写的东西上千字并且有一堆代码上色的内容，我建议你把 “living update”（实时预览）给关掉，如果你不想被卡成幻灯片的话。关掉之后，每保存一次文件，系统就会自动渲染并更新。
 
@@ -114,7 +114,7 @@ LaTeX 这个东西和前边两个工具完全不是同一个重量级的，他�
 4. 运行 “latex-plus: compile” 来编译。我们知道如果有很复杂引用的话， LaTeX 是需要编译三次的， 这里这个插件会给我们解决所有问题，一次编译就可以；
 5. 编译好的文件应该在 `.latex` 文件夹下边，叫 XXXX.pdf， 双击打开即可。如果你装了 “pdf-view” 插件的话，每次编译之后，pdf都会自动更新，非常方便。
 
-![LaTeX效果（请无视我浮夸的文章长度XD）](/img/posts/about-markdown-pandoc-latex_2.png)
+![LaTeX效果（请无视我浮夸的文章长度XD）](/img/posts/2016/about-markdown-pandoc-latex_2.png)
 
 另外呢，atom 插件 “linter” 可以支持各类语法检测以及错误提示。如果你有这方面的需要的话，按照以下步骤来做：
 

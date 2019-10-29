@@ -189,9 +189,9 @@ if len(sys.argv)!=2:
 这次我们给出了各种常见部件的语法（当然都是最基础的方式），下一次我们会着重说文献引用。那我们一会儿见。
 
 
-[1]: /img/posts/latex-for-beginners-2_1.png
+[1]: /img/posts/2017/latex-for-beginners-2_1.png
 [2]: http://towdium.github.io/2016/08/16/about-layout-in-latex/
-[3]: /img/posts/latex-for-beginners-2_2.png
+[3]: /img/posts/2017/latex-for-beginners-2_2.png
 [4]: https://www.overleaf.com/
 [5]: https://github.com/Towdium/towdium.github.io/blob/master/share/latex-for-beginners_pic.pdf
 [6]: https://github.com/Towdium/towdium.github.io/blob/master/share/latex-for-beginners_template.zip

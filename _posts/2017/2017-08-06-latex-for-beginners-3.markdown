@@ -200,10 +200,10 @@ Towdium wrote a stupid article about \LaTeX{} \cite{example}.
 
 我们来觉得这一篇可以最快完成，因为他本身内容并没有太多。最后我发现我还是 too naive。当我想稍微说的深入一些的时候，就不得不考虑到读者的基础，花很大的功夫去解释一些细枝末节的操作。当然我的风格仍然是能给代码就不说话。像这种富文本语言，稍有编程经验的人应该就可以从中找出代码与文本格式的关系。我也尽量把代码写的简洁，便于读者进行编译。这篇说完了，我们的入门内容就告一段落了。下一篇我们会讨论一些略微深入的操作。比如自定义一个方法，或者编程实现流程控制。那我们一会儿见吧。
 
-[1]: /img/posts/latex-for-beginners-3_1.png
+[1]: /img/posts/2017/latex-for-beginners-3_1.png
 [2]: http://pitt.libguides.com/c.php?g=12108&p=64729
-[3]: /img/posts/latex-for-beginners-3_2.png
+[3]: /img/posts/2017/latex-for-beginners-3_2.png
 [4]: https://zh.wikipedia.org/zh-cn/BibTeX
-[5]: /img/posts/latex-for-beginners-3_3.png
-[6]: /img/posts/latex-for-beginners-3_4.png
-[7]: /img/posts/latex-for-beginners-3_5.png
+[5]: /img/posts/2017/latex-for-beginners-3_3.png
+[6]: /img/posts/2017/latex-for-beginners-3_4.png
+[7]: /img/posts/2017/latex-for-beginners-3_5.png

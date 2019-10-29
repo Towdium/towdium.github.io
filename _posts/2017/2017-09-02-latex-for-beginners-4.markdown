@@ -274,6 +274,6 @@ Fun with LaTeX!
 
 
 [1]: https://tex.stackexchange.com/
-[2]: /img/posts/latex-for-beginners-4_1.png
+[2]: /img/posts/2017/latex-for-beginners-4_1.png
 [3]: www.towdium.me/2017/07/10/latex-for-beginners-2/
-[4]: /img/posts/latex-for-beginners-4_2.png
+[4]: /img/posts/2017/latex-for-beginners-4_2.png

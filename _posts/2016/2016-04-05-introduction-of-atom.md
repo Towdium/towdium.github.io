@@ -78,12 +78,12 @@ tags:
 
 
 [1]:https://atom.io/
-[2]:/img/posts/introduction-of-atom.markdown_3.png
-[3]:/img/posts/introduction-of-atom.markdown_1.png
+[2]:/img/posts/2016/introduction-of-atom.markdown_3.png
+[3]:/img/posts/2016/introduction-of-atom.markdown_1.png
 [4]:https://atom.io/packages/activate-power-mode
 [5]:https://atom.io/packages/activate-power-mode
 [6]:http://llvm.org/releases/download.html
-[7]:/img/posts/introduction-of-atom.markdown_4.png
+[7]:/img/posts/2016/introduction-of-atom.markdown_4.png
 [8]:https://atom.io/packages/git-plus
 [9]:https://atom.io/packages/git-control
-[10]:/img/posts/introduction-of-atom.markdown_2.png
+[10]:/img/posts/2016/introduction-of-atom.markdown_2.png

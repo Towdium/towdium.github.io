@@ -61,4 +61,4 @@ JEI 目前使用的是一个典型的后缀树（generalized suffix tree）来�
 
 
 [1]: https://github.com/Towdium/JustEnoughCharacters/blob/1.12.0/feed.json
-[2]: /img/posts/just-enough-characters-never-explode_1.png
+[2]: /img/posts/2019/just-enough-characters-never-explode_1.png

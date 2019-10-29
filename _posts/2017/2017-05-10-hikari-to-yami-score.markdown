@@ -24,5 +24,5 @@ tags:
 
 [1]: https://github.com/Towdium/towdium.github.io/blob/master/share/hikari-to-yami-score.pdf
 [2]: http://www.bilibili.com/video/av2543496/?from=search&seid=14297155548008348574
-[3]: /img/posts/hikari-to-yami-score_1.jpeg
-[4]: /img/posts/hikari-to-yami-score_2.png
+[3]: /img/posts/2017/hikari-to-yami-score_1.jpeg
+[4]: /img/posts/2017/hikari-to-yami-score_2.png

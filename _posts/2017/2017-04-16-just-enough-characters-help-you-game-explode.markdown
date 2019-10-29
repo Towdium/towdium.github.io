@@ -212,5 +212,5 @@ fun main(args: Array<String>) {
 共勉。
 
 [1]:https://github.com/Towdium/JustEnoughCharacters/issues/4
-[2]:/img/posts/just-enough-characters-help-you-game-explode_1.png
-[3]:/img/posts/just-enough-characters-help-you-game-explode_2.png
+[2]:/img/posts/2017/just-enough-characters-help-you-game-explode_1.png
+[3]:/img/posts/2017/just-enough-characters-help-you-game-explode_2.png

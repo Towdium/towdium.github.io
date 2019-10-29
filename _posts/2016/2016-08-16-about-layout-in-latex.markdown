@@ -156,10 +156,10 @@ tags:
 Have fun with LaTeX!
 
 
-[1]: /img/posts/about-layout-in-latex.markdown_1.png
+[1]: /img/posts/2016/about-layout-in-latex.markdown_1.png
 [2]: https://www.zhihu.com/question/26837705
 [3]: http://blog.sina.com.cn/s/blog_54e805300100ky4o.html
-[4]: /img/posts/about-layout-in-latex.markdown_2.png
-[5]: /img/posts/about-layout-in-latex.markdown_3.png
-[6]: /img/posts/about-layout-in-latex.markdown_4.png
+[4]: /img/posts/2016/about-layout-in-latex.markdown_2.png
+[5]: /img/posts/2016/about-layout-in-latex.markdown_3.png
+[6]: /img/posts/2016/about-layout-in-latex.markdown_4.png
 [7]: http://www.ctex.org/documents/latex/graphics/node64.html
