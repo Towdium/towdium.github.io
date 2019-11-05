@@ -2,7 +2,7 @@
 layout: "post"
 title: "java 中的 lambda 与函数式编程初探（下）"
 date: "2016-08-31 15:28"
-author: Author
+author: Towdium
 catalog: true
 tags:
   - Java

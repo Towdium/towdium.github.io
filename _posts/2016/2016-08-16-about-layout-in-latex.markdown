@@ -2,7 +2,7 @@
 layout: "post"
 title: "LaTeX 中的排版细节——中文渲染与图文混排"
 date: "2016-08-16"
-author: Author
+author: Towdium
 catalog: true
 tags:
   - LaTeX

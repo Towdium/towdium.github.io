@@ -2,7 +2,7 @@
 layout: post
 title: Just Enough Charaters —— 让你的电脑不再爆炸
 date: '2019-02-19 17:04'
-author: Author
+author: Towdium
 catalog: true
 tags:
   - JECh

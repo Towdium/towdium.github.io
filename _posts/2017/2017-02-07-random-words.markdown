@@ -2,7 +2,7 @@
 layout: "post"
 title: "日常一篇"
 date: "2017-02-07 23:46"
-author: Author
+author: Towdium
 catalog: false
 tags:
   - 日常

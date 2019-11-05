@@ -2,7 +2,7 @@
 layout: "post"
 title: "为什么不试试 Kotlin 呢"
 date: "2017-04-12 21:56"
-author: Author
+author: Towdium
 catalog: false
 tags:
   - OOP

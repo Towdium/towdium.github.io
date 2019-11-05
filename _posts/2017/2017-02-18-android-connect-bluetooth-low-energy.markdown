@@ -2,7 +2,7 @@
 layout: "post"
 title: "关于安卓与低功耗蓝牙设备连接的简易入门"
 date: "2017-02-18 10:43"
-author: Author
+author: Towdium
 catalog: true
 tags:
   - Andriod

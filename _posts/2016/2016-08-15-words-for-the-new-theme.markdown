@@ -2,7 +2,7 @@
 layout: "post"
 title: "写在主题更新后"
 date: "2016-08-15"
-author: Author
+author: Towdium
 catalog: false
 tags:
   - 日常

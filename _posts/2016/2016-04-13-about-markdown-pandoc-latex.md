@@ -2,7 +2,7 @@
 layout: "post"
 title: "关于 markdown， pandoc 和 LaTeX 的入门安利"
 date: "2016-04-13 14:54"
-author: Author
+author: Towdium
 catalog:    true
 tags:
   - Markdown

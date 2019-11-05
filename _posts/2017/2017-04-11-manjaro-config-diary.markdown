@@ -2,7 +2,7 @@
 layout: post
 title: 小白的 Manjaro 调教日记
 date: '2017-04-11 21:29'
-author: Author
+author: Towdium
 catalog: true
 tags:
   - Manjaro

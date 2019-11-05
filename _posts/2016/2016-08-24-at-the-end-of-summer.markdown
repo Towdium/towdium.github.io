@@ -2,7 +2,7 @@
 layout: "post"
 title: "夏末的日常报告"
 date: "2016-08-24 23:34"
-author: Author
+author: Towdium
 catalog: false
 tags:
   - 日常

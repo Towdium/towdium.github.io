@@ -2,7 +2,7 @@
 layout: "post"
 title: "写在更新发布后"
 date: "2016-09-08 12:19"
-author: Author
+author: Towdium
 catalog: false
 tags:
   - 开发

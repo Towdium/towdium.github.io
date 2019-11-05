@@ -2,7 +2,7 @@
 layout: post
 title: 智障的 LaTeX 入门教程（四）
 date: '2017-09-02 00:28'
-author: Author
+author: Towdium
 catalog: true
 tags:
   - LaTeX

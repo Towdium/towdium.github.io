@@ -2,7 +2,7 @@
 layout: "post"
 title: "抽空发一个 光と闇 简谱 —— 一发酸欠安利"
 date: "2017-05-10 02:58"
-author: Author
+author: Towdium
 catalog: false
 tags:
   - Sayuri

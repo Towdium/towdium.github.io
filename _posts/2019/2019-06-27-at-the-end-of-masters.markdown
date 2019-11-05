@@ -2,7 +2,7 @@
 layout: post
 title: 写在硕士毕业前
 date: '2019-06-27 17:04'
-author: Author
+author: Towdium
 catalog: false
 tags:
   - 日常

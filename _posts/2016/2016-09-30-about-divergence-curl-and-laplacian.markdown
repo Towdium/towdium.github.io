@@ -2,7 +2,7 @@
 layout: "post"
 title: "散度，旋度和拉普拉斯算子"
 date: "2016-09-30 00:21"
-author: Author
+author: Towdium
 catalog: true
 tags:
   - 电学

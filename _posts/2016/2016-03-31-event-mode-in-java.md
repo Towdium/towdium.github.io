@@ -2,7 +2,7 @@
 layout: post
 title:  "关于java事件处理模式的纠结日常"
 date:   2016-03-31
-author: Author
+author: Towdium
 catalog:    true
 tags: [Java]
 ---

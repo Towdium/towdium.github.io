@@ -2,7 +2,7 @@
 layout: post
 title: Hello Blog
 date: 2016-01-29T00:00:00.000Z
-author: Author
+author: Towdium
 tags:
   - 日常
   - Jekyll
