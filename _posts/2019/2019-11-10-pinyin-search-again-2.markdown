@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 再谈拼音搜索（二）——传统的字符串索引
+title: 再谈拼音搜索（二）—— 传统的字符串索引
 date: '2019-11-10 22:36'
 author: Towdium
 catalog: true
