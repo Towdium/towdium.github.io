@@ -58,7 +58,6 @@ void swap(int[] ints, int offset) {
 
 说到这里，我们今天的内容就结束了。我本身算法功底就相当有限，所以也别对这破站上的算法内容有太多期待，这篇文章或多或少也是作为学习笔记存在的。对了，说起文章开头的那个算法题，[这里][3] 给出了一个粗糙但是可用的实现，有兴趣的也可以研究一下。祝好。
 
-
 [1]: /img/posts/2019/algorithm-array-rotation_1.png
 [2]: /img/posts/2019/algorithm-array-rotation_2.png
 [3]:https://gist.github.com/Towdium/8d3232eaac6146f95b47c712e1bbc02b
