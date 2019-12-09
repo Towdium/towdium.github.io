@@ -15,7 +15,8 @@ tags:
 > [第二节 传统的字符串索引][11]  
 > [第三节 拼音树（上）][12]  
 > [第四节 拼音树（下）][13]  
-> 第五节 杂项
+> 第五节 杂项  
+> 所有内容的实现细节参见 [PinIn][15]
 
 ## 前言
 
@@ -121,3 +122,4 @@ __大数据集 + 前缀匹配__
 [12]: https://www.towdium.me/2019/11/17/pinyin-search-again-3/
 [13]: https://www.towdium.me/2019/11/20/pinyin-search-again-4/
 [14]: https://www.towdium.me/2019/11/27/pinyin-search-again-5/
+[15]: https://github.com/Towdium/PinIn
