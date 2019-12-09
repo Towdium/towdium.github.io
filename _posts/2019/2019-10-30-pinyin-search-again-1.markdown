@@ -10,6 +10,13 @@ tags:
   - 开发
 ---
 
+> 再谈拼音匹配系列目录：  
+> 第一节 即时匹配与语境  
+> [第二节 传统的字符串索引][11]  
+> [第三节 拼音树（上）][12]  
+> [第四节 拼音树（下）][13]  
+> [第五节 杂项][14]
+
 ## 前言
 
 最近这两三年以来，除去学校里做的零零散散的项目，我剩下的绝大部分时间都用在了 JECa 和 JECh 两个项目上。实话说 JECa 是一个比较传统的 Minecraft 项目：大量的代码用于描述世界交互，用户界面，数据存储，模组兼容等各种琐事，唯一能用算法解决的部分（`CostList` 的合并）却被我暴力破解了。而 JECh 则不同，他的目标只有一个：用最少的内存进行最快的搜索。尽管从下载量来看，JECh 相比起 JECa 根本不值一提，但是毫无疑问的是，我在这个项目上的技术积累要明显更多：其中用到的搜索引擎从一个套了各种缓存之后勉强能用的小玩意儿最后发展到了一个特性丰富而且性能可靠的系统。我最终将这个系统独立出来，也就是你们所看到的“[PinIn][2]”，一个处理各类拼音匹配问题的 Java 库。
@@ -80,3 +87,8 @@ if (phoneme.equals("zh") && fuzzy) {
 
 [1]: /img/posts/2019/pinyin-search-again-1_1.png
 [2]: https://github.com/Towdium/PinIn
+[10]: https://www.towdium.me/2019/11/05/pinyin-search-again-1/
+[11]: https://www.towdium.me/2019/11/10/pinyin-search-again-2/
+[12]: https://www.towdium.me/2019/11/17/pinyin-search-again-3/
+[13]: https://www.towdium.me/2019/11/20/pinyin-search-again-4/
+[14]: https://www.towdium.me/2019/11/27/pinyin-search-again-5/

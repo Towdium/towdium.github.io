@@ -10,6 +10,13 @@ tags:
   - 开发
 ---
 
+> 再谈拼音匹配系列目录：  
+> [第一节 即时匹配与语境][10]  
+> [第二节 传统的字符串索引][11]  
+> 第三节 拼音树（上）  
+> [第四节 拼音树（下）][13]  
+> [第五节 杂项][14]
+
 ## 前言
 
 今天我们将要迎来这段连载的核心部分——拼音树。简而言之，他也是一种后缀树的变种。类似于传统后缀树树的使用场景，拼音树同样被用来对大批量字符串执行子串匹配。唯一不同的是，这里我们使用拼音子串来匹配汉字原文。
@@ -62,3 +69,8 @@ tags:
 
 [1]: /img/posts/2019/pinyin-search-again-3_1.png
 [2]: /img/posts/2019/pinyin-search-again-3_2.png
+[10]: https://www.towdium.me/2019/11/05/pinyin-search-again-1/
+[11]: https://www.towdium.me/2019/11/10/pinyin-search-again-2/
+[12]: https://www.towdium.me/2019/11/17/pinyin-search-again-3/
+[13]: https://www.towdium.me/2019/11/20/pinyin-search-again-4/
+[14]: https://www.towdium.me/2019/11/27/pinyin-search-again-5/

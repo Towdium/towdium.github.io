@@ -10,6 +10,13 @@ tags:
   - 开发
 ---
 
+> 再谈拼音匹配系列目录：  
+> [第一节 即时匹配与语境][10]  
+> [第二节 传统的字符串索引][11]  
+> [第三节 拼音树（上）][12]  
+> 第四节 拼音树（下）  
+> [第五节 杂项][14]
+
 ## 前言
 
 上一节我们说到，通过在字典树中添加胶水层，我们可以令字典树执行拼音匹配的逻辑。但是字典树的内存占用本来就不理想，在添加胶水层之后就显得更加臃肿了。我们迫切需要一种办法来优化字典树的内存占用。除此之外，这一节还会补足所有上一节没有充分解释的内容。
@@ -64,3 +71,8 @@ tags:
 [2]: /img/posts/2019/pinyin-search-again-4_2.png
 [3]: https://github.com/Towdium/PinIn
 [4]: https://github.com/Towdium/JustEnoughCharacters
+[10]: https://www.towdium.me/2019/11/05/pinyin-search-again-1/
+[11]: https://www.towdium.me/2019/11/10/pinyin-search-again-2/
+[12]: https://www.towdium.me/2019/11/17/pinyin-search-again-3/
+[13]: https://www.towdium.me/2019/11/20/pinyin-search-again-4/
+[14]: https://www.towdium.me/2019/11/27/pinyin-search-again-5/
