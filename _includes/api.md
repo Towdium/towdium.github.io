@@ -8,6 +8,6 @@
 
 镜像的使用方法想必是不用我多说了。那么 Unsplash API 文档那里可以领到呢？[点击此处][1] 即可。在这篇臭屁文章的最后，我必须再次表达我对 Unsplash 的喜爱与赞美。
 
-Have fun!
+> 由 Caddy 强力驱动
 
 [1]: https://source.unsplash.com/
