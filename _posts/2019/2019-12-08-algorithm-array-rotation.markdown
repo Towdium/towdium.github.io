@@ -60,4 +60,4 @@ void swap(int[] ints, int offset) {
 
 [1]: /img/posts/2019/algorithm-array-rotation_1.png
 [2]: /img/posts/2019/algorithm-array-rotation_2.png
-[3]:https://gist.github.com/Towdium/8d3232eaac6146f95b47c712e1bbc02b
+[3]: https://gist.github.com/Towdium/8d3232eaac6146f95b47c712e1bbc02b
